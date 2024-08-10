@@ -30,7 +30,7 @@ def dodaj_zgloszenie():
     new_task['task_id'] = new_task_id
     
     
-    data.append(new_task)    
+    data.append(new_task)
     save_data(data)
     return jsonify({"message": "Task successfully added!", "task" : new_task}), 201
     
@@ -38,7 +38,7 @@ def dodaj_zgloszenie():
 
 @app.route("/zgloszenia", methods = ["GET"])
 def task_list():
-    data = load_data()
+    data = load_data() 
     return data
     
 
