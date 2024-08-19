@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import json
 from functions import save_data, load_data
+from collections import OrderedDict
 
 app = Flask(__name__)
 
@@ -31,17 +32,17 @@ def dodaj_zgloszenie():
         else:
             new_task_id = 1
         
-        new_task = {
-            'task_id': new_task_id,
-            'date' : date,
-            'time' : time,
-            'user': user,
-            'department': department,
-            'machine': machine,
-            'priority_level': priority_level,
-            'reporting_date': reporting_date,
-            'message': message
-        }
+        new_task = OrderedDict([    # POZWALA ZACHOWAC TAKA KOLEJNOSC JAK W PLIKU .JSON
+            ('task_id', new_task_id),
+            ('date', date),
+            ('time', time),
+            ('user', user),
+            ('department', department),
+            ('machine', machine),
+            ('priority_level', priority_level),
+            ('reporting_date', reporting_date),
+            ('message', message),
+        ])
         
         data.append(new_task)
         save_data(data)
