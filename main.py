@@ -11,8 +11,14 @@ def menu():
 
 
 # %% DODAWANIE ZGLOSZENIA 
-@app.route("/dodaj-zgloszenie", methods = ["POST"])
+@app.route('/dodaj-zgloszenie')
 def dodaj_zgloszenie():
+    return render_template('dodaj_zgloszenie.html')
+
+
+# %% New ID kod 
+@app.route("/dodaj-zgloszenie2", methods = ["POST"])
+def dodaj_zgloszenie2():
     
     if request.json:
         new_task = request.json
@@ -30,9 +36,11 @@ def dodaj_zgloszenie():
     new_task['task_id'] = new_task_id
     
     
+    
     data.append(new_task)
     save_data(data)
-    return jsonify({"message": "Task successfully added!", "task" : new_task}), 201
+    # return jsonify({"message": "Task successfully added!", "task" : new_task}), 201
+    return render_template("dodaj_zgloszenie.html")
     
 # %% ZGLOSZENIA --> LISTA ZGLOSZEN
 
@@ -43,8 +51,29 @@ def task_list():
     
 
 # %% 
+
+    
+    
+# %%  TEST 1 
+@app.route('/')
+def form():
+    return render_template('form.html')
+
+@app.route('/submit', methods=['POST'])
+def submit():
+    name = request.form['name']
+    email = request.form['email']
+    age = request.form['age']
+    message = request.form['message']
+    
+    return f'''
+        <h1>Dziękujemy za przesłanie danych!</h1>
+        <p><strong>Imię:</strong> {name}</p>
+        <p><strong>Email:</strong> {email}</p>
+        <p><strong>Wiek:</strong> {age}</p>
+        <p><strong>Wiadomość:</strong> {message}</p>
+    '''
+    
+    
 if __name__ == "__main__":
     app.run()
-    
-    
-# %%
