@@ -7,8 +7,5 @@ Zatrzymalem sie na renderowanie doanych do LISTA ZGLOSZEN
 Utworzenie szablonu do dodawania zgloszenia DONE 
 
 
-TO DO 
-Zapisywac dane z szablonu zgloszen do zakladki "Zgloszenia"
-
-
-NAPRAWIC DODAWANIE ZGLOSZEN ---> COS SIE ZJEBALO 
+To Do 
+Dodac przycisk wyjsca do strony glownej po dodaniu zgloszenia 
