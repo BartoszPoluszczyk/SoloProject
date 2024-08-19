@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgłoszenie dodane</title>
+</head>
+<body>
+    <h1>Dziękujemy za przesłanie danych!</h1>
+    <p><strong> Użytkownik:</strong> {{ new_task.user }}</p>
+    <p><strong> Dział:</strong> {{ new_task.department }}</p>
+    <p><strong> Maszyna:</strong> {{ new_task.machine }}</p>
+    <p><strong> Priorytet:</strong> {{ new_task.priority_level }}</p>
+    <p><strong> Data zgłoszenia:</strong> {{ new_task.reporting_date }}</p>
+    <p><strong> Opis zdarzenia:</strong> {{ new_task.message }}</p>
+</body>
+</html>

@@ -6,9 +6,7 @@
         "description": "sdaad",
         "machine": 31,
         "priority_leavel": "important",
-        "reporting_date": 11,
-        "start_date": 12,
-        "durration": 1
+        "reporting_date": 11
     },
     {
         "task_id": 2,
@@ -17,9 +15,7 @@
         "description": "sdaad",
         "machine": 31,
         "priority_leavel": "important",
-        "reporting_date": 11,
-        "start_date": 12,
-        "durration": 1
+        "reporting_date": 11
     },
     {
         "task_id": 3,
@@ -28,8 +24,69 @@
         "description": "sdaad",
         "machine": 31,
         "priority_leavel": "important",
-        "reporting_date": 11,
-        "start_date": 12,
-        "durration": 1
+        "reporting_date": 11
+    },
+    {
+        "task_id": 4,
+        "user": null,
+        "department": null,
+        "machine": null,
+        "priority_level": null,
+        "reporting_date": null,
+        "message": null
+    },
+    {
+        "task_id": 5,
+        "user": "dsadas",
+        "department": "im",
+        "machine": "123",
+        "priority_level": "wysoki",
+        "reporting_date": "2024-08-19T22:23:50",
+        "message": "fsdagf"
+    },
+    {
+        "task_id": 6,
+        "user": "dsadas",
+        "department": "im",
+        "machine": "123",
+        "priority_level": "wysoki",
+        "reporting_date": "2024-08-19T22:23:50",
+        "message": "fsdagf"
+    },
+    {
+        "task_id": 7,
+        "user": "dsadas",
+        "department": "im",
+        "machine": "123",
+        "priority_level": "wysoki",
+        "reporting_date": "2024-08-19T22:23:50",
+        "message": "fsdagf"
+    },
+    {
+        "task_id": 8,
+        "user": "dsadas",
+        "department": "im",
+        "machine": "123",
+        "priority_level": "wysoki",
+        "reporting_date": "2024-08-19T22:23:50",
+        "message": "fsdagf"
+    },
+    {
+        "task_id": 9,
+        "user": "dsad",
+        "department": "im",
+        "machine": "231",
+        "priority_level": "niski",
+        "reporting_date": "2024-08-19T22:26:47",
+        "message": "gsfdgdfs"
+    },
+    {
+        "task_id": 10,
+        "user": "dsad",
+        "department": "im",
+        "machine": "231",
+        "priority_level": "niski",
+        "reporting_date": "2024-08-19T22:26:47",
+        "message": "gsfdgdfs"
     }
 ]

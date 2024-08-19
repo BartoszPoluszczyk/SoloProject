@@ -8,18 +8,44 @@
 <body>
     <h1>Wprowadź swoje dane</h1>
     
-    <form action="/dodaj-zgloszenie" method="post">
-        <label for="name">Uzytkownik:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <form action="/dodaj-zgloszenie" method="post" enctype="multipart/form-data">
+        <label for="user">Uzytkownik:</label><br>
+        <input type="text" id="user" name="user" required><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="department">Dzial:</label>
+        <select id = 'department' name = "department" required>
+            <option value = "im"> IM </option>
+            <option value = 'mt' > MT </option>
+            <option value = "ts" > TS </option>
+            <option value = "qs" > QS </option>
+        </select><br><br>
 
-        <label for="age">Wiek:</label><br>
-        <input type="number" id="age" name="age" required><br><br>
+        <label for="machine">Maszyna:</label><br>
+        <input type="number" id="machine" name="machine" required><br><br>
 
-        <label for="message">Wiadomość:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <label for="priority_level">Priority_leavel:</label>
+        <select id="priority_level" name="priority_level" required>
+            <option value = "niski"> Niski</option>
+            <option value = "sredni"> Średni</option>
+            <option value = "wysoki"> Wysoki </option>
+        </select>
+            <br><br>
+
+        <label for = "reporting_date">Data zgłoszenia:</label>
+        <input type = "datetime" id = "date" name = "date" required>
+            <button type = "button" onclick = "setTodayDate()">Ustaw datę. </button><br>
+                <script>
+                    function setTodayDate() {
+                        const now = new Date();
+                        const today = now.toISOString().split('T')[0];
+                        const time = now.toTimeString().split(' ')[0];
+                        document.getElementById('date').value = `${today}T${time}`;
+                    }
+                </script>
+            <br>
+
+        <label for="message">Opisa zdarzenia:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
         <input type="submit" value="Wyślij">
     </form>
