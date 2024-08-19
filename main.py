@@ -20,6 +20,8 @@ def dodaj_zgloszenie():
         priority_level = request.form.get('priority_level')
         reporting_date = request.form.get('date')
         message = request.form.get('message')
+        
+        date, time = reporting_date.split("T")
 
         data = load_data()
         
@@ -31,6 +33,8 @@ def dodaj_zgloszenie():
         
         new_task = {
             'task_id': new_task_id,
+            'date' : date,
+            'time' : time,
             'user': user,
             'department': department,
             'machine': machine,
