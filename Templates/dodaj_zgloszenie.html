@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularz użytkownika</title>
+    <link rel="stylesheet" href="../static/dodaj_zgloszenie.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Dodaj zgloszenie.</h1>
+    <header class = "header">
+        <h1>Dodaj zgloszenie.</h1>
+    </header>
     
     <form action="/dodaj-zgloszenie" method="post" enctype="multipart/form-data">
         <label for="user">Uzytkownik:</label><br>
@@ -49,5 +54,11 @@
 
         <input type="submit" value="Wyślij">
     </form>
+
+    <footer class = "footer">
+        Autor: P.B
+    </footer>
+
+    <script> src = "dodaj_zgloszenie.js"
 </body>
 </html>

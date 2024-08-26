@@ -1,0 +1,31 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 20px;
+}
+
+.sign-up-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.sign-up-data input {
+    padding: 10px;
+}
+.gender-choice {
+    margin-bottom: 10px; /* Opcjonalnie, aby dodać odstęp poniżej kontenera */
+}
+
+.radio-group {
+    display: inline-block;
+}
+
+.radio-group div {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input {
+    margin-right: 5px;
+    display: inline-block;
+}

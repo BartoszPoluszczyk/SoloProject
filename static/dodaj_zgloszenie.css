@@ -1,0 +1,17 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 20px;
+    background-color: lightgrey;
+}
+.header {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: yellow;
+}

@@ -17,7 +17,7 @@ def panel_logowania():
 
 @app.route('/rejestracja')
 def rejestracja():
-    pass
+    return render_template("rejsetracja.html")
 
 
 # %% DODAWANIE ZGLOSZENIA 

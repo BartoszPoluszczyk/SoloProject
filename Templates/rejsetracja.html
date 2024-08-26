@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="../static/rejestracja.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Rejestracja</h1>
+
+    <form action="/rejestracja" method="POST" enctype="multipart/form-data">
+        <div class="sign-up-data singupstep">
+            <div>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required placeholder="Wpisz Imię">
+            </div>
+            <div>
+                <label for="lastname">Nazwisko:</label>
+                <input type="text" id="lastname" name="lastname" required placeholder="Wpisz Nazwisko">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Wpisz E-mail">
+            </div>
+            <div>
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required placeholder="Wpisz hasło">
+            </div>
+            <div>
+                <label for="repeat_password">Powtórz hasło:</label>
+                <input type="password" id="repeat_password" name="repeat_password" required placeholder="Powtórz hasło">
+            </div>
+
+            <div class="gender-choice">
+                <p>Płeć:</p>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Mężczyzna</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Kobieta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Inna</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="regulamin">
+                <label>Zgody:</label>
+                <div>
+                    <input type="checkbox" id="regulamin1" name="regulamin1" value="regulamin1" required>
+                    <label for="regulamin1">Akceptuję Regulamin 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="regulamin2" name="regulamin2" value="regulamin2">
+                    <label for="regulamin2">Akceptuję Regulamin 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="regulamin3" name="regulamin3" value="regulamin3">
+                    <label for="regulamin3">Akceptuję Regulamin 3</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Możesz dodać przycisk do przesyłania formularza tutaj -->
+        <button type="submit">Zarejestruj się</button>
+    </form>
+</body>
+</html>

@@ -1,10 +1,13 @@
 body {
     background-color: lightgray;
     margin: 0px;
+    font-family: "Open Sans", sans-serif;
 
 }
 .header {
     background-color: yellow;
+    display: flex;
+    justify-content: center;
     text-align: center;
 
 }
@@ -16,7 +19,14 @@ body {
     justify-content: space-around;
     overflow: hidden; /* Ukrycie przepełnienia */
     background-color: #FF0000; /* Kolor tła */
+    width: 80%;
 }
+.basic_categories {
+    width: 100%;
+    display: inline-block;
+}
+
+
 
 .categories ul li {
     display: inline-block; /* Wyświetlanie elementów w jednym wierszu */
@@ -29,4 +39,10 @@ body {
     padding: 14px 16px; /* Wewnętrzne wcięcie */
     text-decoration: none; /* Usunięcie podkreślenia */
     display: block; /* Sprawienie, aby cały obszar linku był klikalny */
+}
+.footer {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
