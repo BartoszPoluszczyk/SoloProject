@@ -10,6 +10,15 @@ app = Flask(__name__)
 def menu(): 
     return render_template("menu.html")
 
+# %% Logowanie 
+@app.route('/panel-logowania')
+def panel_logowania():
+    return render_template("panel_logowania.html")
+
+@app.route('/rejestracja')
+def rejestracja():
+    pass
+
 
 # %% DODAWANIE ZGLOSZENIA 
 @app.route('/dodaj-zgloszenie', methods=["GET", "POST"])
@@ -59,33 +68,6 @@ def task_list():
     return data
     
 
-# %% 
 
-    
-    
-# %%  TEST 1 
-@app.route('/')
-def form():
-    return render_template('dodaj_zgloszenie.html')
-
-@app.route('/submit', methods=['POST'])
-def submit():
-    user = request.form['user']
-    department = request.form['department']
-    machine = request.form['machine']
-    priority_level = request.form['priority_level']
-    reporting_date = request.form['reporting_date']
-    message = request.form['message']
-    
-    return f'''
-        <h1>Dziękujemy za przesłanie danych!</h1>
-        <p><strong> User:</strong> {user}</p>
-        <p><strong> Department:</strong> {department}</p>
-        <p><strong> Machine:</strong> {machine}</p>
-        <p><strong> Wiadomość:</strong> {priority_level}</p>
-        <p><strong> reporting_date: </strong> {reporting_date}</p>
-        <p><strong> Message: </strong> {message}</p>
-    '''
-    
 if __name__ == "__main__":
     app.run()

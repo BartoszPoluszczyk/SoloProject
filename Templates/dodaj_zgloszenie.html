@@ -6,11 +6,11 @@
     <title>Formularz użytkownika</title>
 </head>
 <body>
-    <h1>Wprowadź swoje dane</h1>
+    <h1>Dodaj zgloszenie.</h1>
     
     <form action="/dodaj-zgloszenie" method="post" enctype="multipart/form-data">
         <label for="user">Uzytkownik:</label><br>
-        <input type="text" id="user" name="user" required><br><br>
+        <input type="text" id="user" name="user" required placeholder="Uzytkownik"><br><br>
 
         <label for="department">Dzial:</label>
         <select id = 'department' name = "department" required>
@@ -45,7 +45,7 @@
             <br>
 
         <label for="message">Opisa zdarzenia:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <textarea id="message" name="message" rows="4" cols="50" required placeholder = "Opisz zdarzenie"></textarea><br><br>
 
         <input type="submit" value="Wyślij">
     </form>
