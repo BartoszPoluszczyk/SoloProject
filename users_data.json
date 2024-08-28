@@ -1,0 +1,42 @@
+[
+    {
+        "user_id": 1,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "bartosz12360@gmail.com",
+        "password": "123",
+        "gender": "male"
+    },
+    {
+        "user_id": 2,
+        "name": "Marianna",
+        "lastname": "Wozniak",
+        "email": "Marianna12360@gmail.com",
+        "password": "234",
+        "gender": "female"
+    },
+    {
+        "user_id": 3,
+        "name": "Marianna",
+        "lastname": "Wozniak",
+        "email": "Marianna12360@gmail.com",
+        "password": "1234",
+        "gender": "other"
+    },
+    {
+        "user_id": 4,
+        "name": "Marianna",
+        "lastname": "Wozniak",
+        "email": "Marianna12360@gmail.com",
+        "password": "322",
+        "gender": "other"
+    },
+    {
+        "user_id": 5,
+        "name": "Marianna",
+        "lastname": "Wozniak",
+        "email": "marianna12360@gmail.com",
+        "password": "123",
+        "gender": "other"
+    }
+]

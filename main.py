@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import json
-from functions import save_data, load_data
+from functions import save_data, load_data, load_users_data, save_users_data
 from collections import OrderedDict
 
 app = Flask(__name__)
@@ -15,9 +15,45 @@ def menu():
 def panel_logowania():
     return render_template("panel_logowania.html")
 
-@app.route('/rejestracja')
+@app.route('/rejestracja', methods = ["GET", "POST"])
 def rejestracja():
-    return render_template("rejsetracja.html")
+    if request.method == "POST":
+        name = request.form.get("name")
+        lastname = request.form.get("lastname")
+        email = request.form.get("email")
+        password = request.form.get("password")
+        repeat_password = request.form.get("repeat_password")
+        gender = request.form.get("gender")
+        regulamin1 = request.form.get("regulamin1")
+        regulamin2 = request.form.get("regulamin2")
+        regulamin3 = request.form.get("regulamin3")
+        
+        data = load_users_data()
+        
+        if data:
+            max_user_id = max(int(user["user_id"]) for user in data)
+            user_id = max_user_id + 1
+        else:
+            user_id = 1
+        
+        if password != repeat_password:
+            return jsonify({"message": "Niezgodnosc hasel"}), 400
+
+        else:
+            new_user = OrderedDict ([
+                ('user_id' , user_id),
+                ("name" , name),
+                ('lastname' , lastname),
+                ('email' , email.lower()),
+                ('password' , password),
+                ('gender' , gender)
+            ])
+    
+            data.append(new_user)
+            save_users_data(data)
+            
+        return render_template("zarejestrowano.html", new_user = new_user)
+    return render_template("rejestracja.html")
 
 
 # %% DODAWANIE ZGLOSZENIA 
