@@ -1,15 +1,20 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import json
 from functions import save_data, load_data, load_users_data, save_users_data
 from collections import OrderedDict
 import werkzeug.security
 
 app = Flask(__name__)
+app.secret_key = 'CMMS'
 
 # %% STRONA GLOWNA      HOMEPAGE        =          http://127.0.0.1:5000/menu
 @app.route("/menu")
 def menu(): 
-    return render_template("menu.html")
+    if 'username' in session:
+        return render_template("menu.html")
+    else:
+        return redirect(url_for('logowanie'))
+    # return render_template("menu.html")
 
 # %% Logowanie 
 @app.route('/panel-logowania')
@@ -66,7 +71,6 @@ def rejestracja():
 # %% Logowanie 
 @app.route("/logowanie", methods = ["GET", "POST"])
 def logowanie():
-    
     data = load_users_data()
     if request.method == "POST":
         email = request.form.get('email')
@@ -76,7 +80,10 @@ def logowanie():
     
         if user:
             if user['password']  == password:
-                return render_template("menu.html")
+                session['username'] = user['email']
+                session['user_id'] = user['user_id']
+                return redirect(url_for('menu'))
+                # return render_template("menu.html")
             else:
                 return jsonify({"message": "Bledne dane logowania"})
         else:
@@ -85,7 +92,12 @@ def logowanie():
        
     return render_template("logowanie.html")
 
-
+# %% Wylogowanie sesji
+@app.route("/wylogowanie")
+def wylogowanie():
+    session.pop('email', None)
+    session.pop('user_id', None)
+    return redirect(url_for('logowanie'))
 # %% DODAWANIE ZGLOSZENIA 
 @app.route('/dodaj-zgloszenie', methods=["GET", "POST"])
 def dodaj_zgloszenie():
