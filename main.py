@@ -3,6 +3,7 @@ import json
 from functions import save_data, load_data, load_users_data, save_users_data
 from collections import OrderedDict
 import werkzeug.security
+from datetime import timedelta
 
 app = Flask(__name__)
 app.secret_key = 'CMMS'
@@ -82,6 +83,8 @@ def logowanie():
             if user['password']  == password:
                 session['username'] = user['email']
                 session['user_id'] = user['user_id']
+                session.permanent = True
+                session.permanent_session_lifetime = timedelta(minutes=1) 
                 return redirect(url_for('menu'))
                 # return render_template("menu.html")
             else:
