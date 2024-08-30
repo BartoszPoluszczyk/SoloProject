@@ -110,5 +110,13 @@
         "email": "bartos@gmail.com",
         "password": "scrypt:32768:8:1$jCOSQnVgDjqdJ3fe$3f75d0dd4b53d4c9fdf436d533854c0411eb87ea7198a6ce40b8d1e80e6050f3637c1759ca44e3ba3a0ca672f2be0257a35a28bfd807cd63ae099f7664f2fa05",
         "gender": "other"
+    },
+    {
+        "user_id": 15,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "ba@gmail.com",
+        "password": "scrypt:32768:8:1$2tr4FTBnSkFNluEc$728280113c9615dfffa2ce50b4546bb3c92b9accb7a47b36f3ed04b5b19d06563c7dcb94e20c4b6022d85d80b3cd0b86e83892c0336f9e184524ba63d786e9a7",
+        "gender": "male"
     }
 ]
