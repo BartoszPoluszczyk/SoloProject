@@ -78,5 +78,37 @@
         "email": "bartosz160@gmail.com",
         "password": "#q1!11111",
         "gender": "female"
+    },
+    {
+        "user_id": 11,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "bartosz1222360@gmail.com",
+        "password": "qwerty1234!",
+        "gender": "female"
+    },
+    {
+        "user_id": 12,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "bartosz122222360@gmail.com",
+        "password": "scrypt:32768:8:1$Bpg6PVznwMF8RwuN$d2b72167c331975be19b5c8475d38088f138b8f284cc2ae309ebbfff8b994266f3bd6bff14184b2dbef00030b006d0efecab0ecb01a18e312d7905c9c5959c9e",
+        "gender": "female"
+    },
+    {
+        "user_id": 13,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "bartosz1222223460@gmail.com",
+        "password": "scrypt:32768:8:1$7AqgkUPK3C8P0oBn$3095f4927a87828a7c5d5f2b1584435ed1186326ce16088dcc75b38055fd83e64f3db305a2f54c570aa33c2f4f0f3201bb2bdd8463bf2ad697be194841df3251",
+        "gender": "female"
+    },
+    {
+        "user_id": 14,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "bartos@gmail.com",
+        "password": "scrypt:32768:8:1$jCOSQnVgDjqdJ3fe$3f75d0dd4b53d4c9fdf436d533854c0411eb87ea7198a6ce40b8d1e80e6050f3637c1759ca44e3ba3a0ca672f2be0257a35a28bfd807cd63ae099f7664f2fa05",
+        "gender": "other"
     }
 ]

@@ -1,13 +1,18 @@
+HASLO DO TESTOW ----->      QWERTY1234!
+
+
 1. Logowanie do aplikacji 
 
     -Baza danych z loginami i haslami 
     -Wprowadzanie danych z poziomu HTMLa
     -
 
-
+    Dodano hashowanie hasla 
 
     TO DO!
 
     Dodac przycisk do wylogowywania 
     Dodac sesje logowania do pozostalych zakladek
-    Zaszyfrowac hasla 
+    Dodac rozszyfrowywanie hasla w panelu logowania
+
+  

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, session, redirect, u
 import json
 from functions import save_data, load_data, load_users_data, save_users_data
 from collections import OrderedDict
-import werkzeug.security
+from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import timedelta
 
 app = Flask(__name__)
@@ -35,6 +35,7 @@ def rejestracja():
         regulamin2 = request.form.get("regulamin2")
         regulamin3 = request.form.get("regulamin3")
         
+        hashed_password = generate_password_hash(password)
         data = load_users_data()
         
         #q1!11111
@@ -59,7 +60,7 @@ def rejestracja():
             ("name" , name),
             ('lastname' , lastname),
             ('email' , email.lower()),
-            ('password' , password),
+            ('password' , hashed_password),
             ('gender' , gender)
         ])
 
@@ -80,11 +81,13 @@ def logowanie():
         user = next((user for user in data if user['email'] == email), None)
     
         if user:
-            if user['password']  == password:
+            print("Hash zapisany w systemie:", user['password'])
+            print("Hasło podane przez użytkownika:", password)
+            if check_password_hash(user['password'], password):
                 session['username'] = user['email']
                 session['user_id'] = user['user_id']
                 session.permanent = True
-                session.permanent_session_lifetime = timedelta(minutes=1) 
+                session.permanent_session_lifetime = timedelta(minutes=30) 
                 return redirect(url_for('menu'))
                 # return render_template("menu.html")
             else:
