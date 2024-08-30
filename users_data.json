@@ -38,5 +38,45 @@
         "email": "marianna12360@gmail.com",
         "password": "123",
         "gender": "other"
+    },
+    {
+        "user_id": 6,
+        "name": "Marianna",
+        "lastname": "Wozniak",
+        "email": "marianna12360@gmail.com",
+        "password": "1234",
+        "gender": "other"
+    },
+    {
+        "user_id": 7,
+        "name": "Marianna",
+        "lastname": "Wozniak",
+        "email": "marianna12360@gmail.com",
+        "password": "qwerty123!",
+        "gender": "other"
+    },
+    {
+        "user_id": 8,
+        "name": "Dariusz",
+        "lastname": "Poluszczyk",
+        "email": "dp@wp.pl",
+        "password": "qwerty1234!",
+        "gender": "male"
+    },
+    {
+        "user_id": 9,
+        "name": "dasasd",
+        "lastname": "dasd",
+        "email": "asda@wp.pl",
+        "password": "q1!00000",
+        "gender": "female"
+    },
+    {
+        "user_id": 10,
+        "name": "Bartosz",
+        "lastname": "Poluszczyk",
+        "email": "bartosz160@gmail.com",
+        "password": "#q1!11111",
+        "gender": "female"
     }
 ]

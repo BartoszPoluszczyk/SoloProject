@@ -28,7 +28,9 @@
             </div>
             <div>
                 <label for="password">Hasło:</label>
-                <input type="password" id="password" name="password" required placeholder="Wpisz hasło">
+                <input type="password" id="password" name="password" required placeholder="Wpisz hasło"
+                pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,}" 
+               title="Hasło musi zawierać co najmniej jedną cyfrę, jeden znak specjalny i mieć minimum 8 znaków.">
             </div>
             <div>
                 <label for="repeat_password">Powtórz hasło:</label>
