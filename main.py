@@ -22,6 +22,8 @@ def menu():
 def panel_logowania():
     return render_template("panel_logowania.html")
 
+# %% Rejestrowanie 
+
 @app.route('/rejestracja', methods = ["GET", "POST"])
 def rejestracja():
     if request.method == "POST":
@@ -104,6 +106,7 @@ def wylogowanie():
     session.pop('email', None)
     session.pop('user_id', None)
     return redirect(url_for('logowanie'))
+
 # %% DODAWANIE ZGLOSZENIA 
 @app.route('/dodaj-zgloszenie', methods=["GET", "POST"])
 def dodaj_zgloszenie():
