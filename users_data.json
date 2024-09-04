@@ -118,5 +118,13 @@
         "email": "ba@gmail.com",
         "password": "scrypt:32768:8:1$2tr4FTBnSkFNluEc$728280113c9615dfffa2ce50b4546bb3c92b9accb7a47b36f3ed04b5b19d06563c7dcb94e20c4b6022d85d80b3cd0b86e83892c0336f9e184524ba63d786e9a7",
         "gender": "male"
+    },
+    {
+        "user_id": 16,
+        "name": "aq",
+        "lastname": "dqwd",
+        "email": "q@g.pl",
+        "password": "scrypt:32768:8:1$XNSxBkL1f3ocHaD0$6c71eb3bf9d2bc14ecb961da3287d4ea8a4ba0f13601835708da898f76fd440247f6037b478100acea708a930f3819a30e88d6b647fdedbb2093b2f2ed505f1e",
+        "gender": "male"
     }
 ]

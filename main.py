@@ -11,10 +11,9 @@ app.secret_key = 'CMMS'
 # %% STRONA GLOWNA      HOMEPAGE        =          http://127.0.0.1:5000/menu
 @app.route("/menu")
 def menu(): 
-    if 'username' in session:
-        return render_template("menu.html")
-    else:
-        return redirect(url_for('logowanie'))
+
+    return render_template("menu.html")
+
     # return render_template("menu.html")
 
 # %% Logowanie 
@@ -86,7 +85,7 @@ def logowanie():
             print("Hash zapisany w systemie:", user['password'])
             print("Hasło podane przez użytkownika:", password)
             if check_password_hash(user['password'], password):
-                session['username'] = user['email']
+                session['email'] = user['email']
                 session['user_id'] = user['user_id']
                 session.permanent = True
                 session.permanent_session_lifetime = timedelta(minutes=30) 
@@ -95,64 +94,69 @@ def logowanie():
             else:
                 return jsonify({"message": "Bledne dane logowania"})
         else:
-            return jsonify({"message": "Brak uzytkownika o podanym emailu {email}"})
+            return jsonify({"message": f"Brak uzytkownika o podanym emailu {email}"})
             
        
     return render_template("logowanie.html")
+
 
 # %% Wylogowanie sesji
 @app.route("/wylogowanie")
 def wylogowanie():
     session.pop('email', None)
     session.pop('user_id', None)
-    return redirect(url_for('logowanie'))
+    return redirect(url_for('panel_logowania'))
 
 # %% DODAWANIE ZGLOSZENIA 
 @app.route('/dodaj-zgloszenie', methods=["GET", "POST"])
 def dodaj_zgloszenie():
-    if request.method == "POST":
-        user = request.form.get('user')
-        department = request.form.get('department')
-        machine = request.form.get('machine')
-        priority_level = request.form.get('priority_level')
-        reporting_date = request.form.get('date')
-        message = request.form.get('message')
-        
-        date, time = reporting_date.split("T")
+    if 'email' in session:
+        if request.method == "POST":
+            user = request.form.get('user')
+            department = request.form.get('department')
+            machine = request.form.get('machine')
+            priority_level = request.form.get('priority_level')
+            reporting_date = request.form.get('date')
+            message = request.form.get('message')
+            
+            date, time = reporting_date.split("T")
 
-        data = load_data()
-        
-        if data:
-            max_task_id = max(int(task["task_id"]) for task in data)
-            new_task_id = max_task_id + 1
-        else:
-            new_task_id = 1
-        
-        new_task = OrderedDict([    # POZWALA ZACHOWAC TAKA KOLEJNOSC JAK W PLIKU .JSON
-            ('task_id', new_task_id),
-            ('date', date),
-            ('time', time),
-            ('user', user),
-            ('department', department),
-            ('machine', machine),
-            ('priority_level', priority_level),
-            ('reporting_date', reporting_date),
-            ('message', message),
-        ])
-        
-        data.append(new_task)
-        save_data(data)
-        
-        return render_template('success.html', new_task=new_task)
+            data = load_data()
+            
+            if data:
+                max_task_id = max(int(task["task_id"]) for task in data)
+                new_task_id = max_task_id + 1
+            else:
+                new_task_id = 1
+            
+            new_task = OrderedDict([    # POZWALA ZACHOWAC TAKA KOLEJNOSC JAK W PLIKU .JSON
+                ('task_id', new_task_id),
+                ('date', date),
+                ('time', time),
+                ('user', user),
+                ('department', department),
+                ('machine', machine),
+                ('priority_level', priority_level),
+                ('reporting_date', reporting_date),
+                ('message', message),
+            ])
+            
+            data.append(new_task)
+            save_data(data)
+            
+            return render_template('success.html', new_task=new_task)
 
-    return render_template('dodaj_zgloszenie.html')
+        return render_template('dodaj_zgloszenie.html')
+    else:
+        return redirect(url_for('panel_logowania'))
 
 # %% ZGLOSZENIA --> LISTA ZGLOSZEN
 
 @app.route("/zgloszenia", methods = ["GET"])
 def task_list():
-    data = load_data() 
-    return data
+    if 'email' in session:
+        data = load_data() 
+        return data
     
 
 

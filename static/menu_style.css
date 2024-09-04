@@ -2,6 +2,9 @@ body {
     background-color: lightgray;
     margin: 0px;
     font-family: "Open Sans", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 
 }
 .header {
@@ -46,3 +49,14 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    background-color: yellow;
+}
+
+
+
