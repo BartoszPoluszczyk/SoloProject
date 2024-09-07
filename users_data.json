@@ -1,130 +1,18 @@
 [
     {
         "user_id": 1,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
+        "name": "admin",
+        "lastname": "admin",
         "email": "bartosz12360@gmail.com",
-        "password": "123",
+        "password": "scrypt:32768:8:1$RVMEZDP2rlB88KtX$f02f69aa248cb03a9369e6b4ab409f662ea3e625103b8c54410bb3d679d63347457201cad514da8a71fc07b4c8249c5b593907563b81f97e4efa4c5de271297b",
         "gender": "male"
     },
     {
         "user_id": 2,
-        "name": "Marianna",
-        "lastname": "Wozniak",
-        "email": "Marianna12360@gmail.com",
-        "password": "234",
-        "gender": "female"
-    },
-    {
-        "user_id": 3,
-        "name": "Marianna",
-        "lastname": "Wozniak",
-        "email": "Marianna12360@gmail.com",
-        "password": "1234",
-        "gender": "other"
-    },
-    {
-        "user_id": 4,
-        "name": "Marianna",
-        "lastname": "Wozniak",
-        "email": "Marianna12360@gmail.com",
-        "password": "322",
-        "gender": "other"
-    },
-    {
-        "user_id": 5,
-        "name": "Marianna",
-        "lastname": "Wozniak",
-        "email": "marianna12360@gmail.com",
-        "password": "123",
-        "gender": "other"
-    },
-    {
-        "user_id": 6,
-        "name": "Marianna",
-        "lastname": "Wozniak",
-        "email": "marianna12360@gmail.com",
-        "password": "1234",
-        "gender": "other"
-    },
-    {
-        "user_id": 7,
-        "name": "Marianna",
-        "lastname": "Wozniak",
-        "email": "marianna12360@gmail.com",
-        "password": "qwerty123!",
-        "gender": "other"
-    },
-    {
-        "user_id": 8,
-        "name": "Dariusz",
-        "lastname": "Poluszczyk",
-        "email": "dp@wp.pl",
-        "password": "qwerty1234!",
-        "gender": "male"
-    },
-    {
-        "user_id": 9,
-        "name": "dasasd",
-        "lastname": "dasd",
-        "email": "asda@wp.pl",
-        "password": "q1!00000",
-        "gender": "female"
-    },
-    {
-        "user_id": 10,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
-        "email": "bartosz160@gmail.com",
-        "password": "#q1!11111",
-        "gender": "female"
-    },
-    {
-        "user_id": 11,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
-        "email": "bartosz1222360@gmail.com",
-        "password": "qwerty1234!",
-        "gender": "female"
-    },
-    {
-        "user_id": 12,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
-        "email": "bartosz122222360@gmail.com",
-        "password": "scrypt:32768:8:1$Bpg6PVznwMF8RwuN$d2b72167c331975be19b5c8475d38088f138b8f284cc2ae309ebbfff8b994266f3bd6bff14184b2dbef00030b006d0efecab0ecb01a18e312d7905c9c5959c9e",
-        "gender": "female"
-    },
-    {
-        "user_id": 13,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
-        "email": "bartosz1222223460@gmail.com",
-        "password": "scrypt:32768:8:1$7AqgkUPK3C8P0oBn$3095f4927a87828a7c5d5f2b1584435ed1186326ce16088dcc75b38055fd83e64f3db305a2f54c570aa33c2f4f0f3201bb2bdd8463bf2ad697be194841df3251",
-        "gender": "female"
-    },
-    {
-        "user_id": 14,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
-        "email": "bartos@gmail.com",
-        "password": "scrypt:32768:8:1$jCOSQnVgDjqdJ3fe$3f75d0dd4b53d4c9fdf436d533854c0411eb87ea7198a6ce40b8d1e80e6050f3637c1759ca44e3ba3a0ca672f2be0257a35a28bfd807cd63ae099f7664f2fa05",
-        "gender": "other"
-    },
-    {
-        "user_id": 15,
-        "name": "Bartosz",
-        "lastname": "Poluszczyk",
-        "email": "ba@gmail.com",
-        "password": "scrypt:32768:8:1$2tr4FTBnSkFNluEc$728280113c9615dfffa2ce50b4546bb3c92b9accb7a47b36f3ed04b5b19d06563c7dcb94e20c4b6022d85d80b3cd0b86e83892c0336f9e184524ba63d786e9a7",
-        "gender": "male"
-    },
-    {
-        "user_id": 16,
-        "name": "aq",
-        "lastname": "dqwd",
-        "email": "q@g.pl",
-        "password": "scrypt:32768:8:1$XNSxBkL1f3ocHaD0$6c71eb3bf9d2bc14ecb961da3287d4ea8a4ba0f13601835708da898f76fd440247f6037b478100acea708a930f3819a30e88d6b647fdedbb2093b2f2ed505f1e",
+        "name": "11",
+        "lastname": "11",
+        "email": "1@w.pl",
+        "password": "scrypt:32768:8:1$3bSm9C40QFCe5FqD$ceea996d2fa30c1ee7766928ef11352e974e4ea0924a3e96ea7ccc747cfd0e0538142ac56bdf8c214a75e808a376b185486207a9a40685a2cdd8f97cef57cd92",
         "gender": "male"
     }
 ]

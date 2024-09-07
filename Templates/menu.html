@@ -18,8 +18,8 @@
             <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
         {% endif %}
     </section>
-</header>
-    <section class = "basic_categories">
+</header> <!-- Added closing tag -->
+    <section class="basic_categories">
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#news">News</a>
@@ -27,19 +27,24 @@
             <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
             <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
             <a href="/raport" title="Raport">Raport</a>
-            <a href="/statystyka" title="Statystyka">Statyskyka</a> <!-- Dodano zamknięcie cudzysłowu -->
+            <a href="/statystyka" title="Statystyka">Statystyka</a>
             <a href="/kontakt" title="Kontakt">Kontakt</a>
-            <nav id = "logowanie">
+
+            <nav id="logowanie">
                 {% if session.email %}
                     <a href="{{ url_for('wylogowanie') }}">Wyloguj się</a>
                 {% else %}
                     <a href="/panel-logowania" title="Logowanie">Logowanie</a>
                 {% endif %}
-                  </nav>
+            </nav>
+            <nav class="admin">
+              {% if session.user_id == 1%}
+                  <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
+              {% endif %}
+          </nav>
         </div>
     </section>
-    <footer class = "footer">Autor: P.B</footer>
-
+    <footer class="footer">Autor: P.B</footer>
 
 </body>
-</html> 
+</html>

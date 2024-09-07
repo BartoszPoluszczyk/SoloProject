@@ -74,7 +74,7 @@ def rejestracja():
     return render_template("rejestracja.html")
 
 # %% Logowanie 
-@app.route("/logowanie", methods = ["GET", "POST"])
+@app.route("/panel-logowania", methods = ["GET", "POST"])
 def logowanie():
     data = load_users_data()
     if request.method == "POST":
@@ -99,7 +99,7 @@ def logowanie():
             return jsonify({"message": f"Brak uzytkownika o podanym emailu {email}"})
             
        
-    return render_template("logowanie.html")
+    return render_template("panel_logowania.html")
 
 
 # %% Wylogowanie sesji

@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
-    <title>Strona logowania</title>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logowanie</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel = "stylesheet" href = "../static/logowanie.css">
+    </head>
+    <body>
+        <header>
+            <h2>Logowanie</h2>
+            <div>
+                
+        </header>
 
-</head>
-<body>
-    <h2>Zaloguj sie teraz</h2>
-    <p>Wybierz jedna z ponizszych opcji.</p>
-    <ul>
-        <li><a href = "/logowanie">Zaloguj </a></li>
-        <li><a href = "/rejestracja">Zarejestruj</a></li>
-    </ul>
-</body>
-
-
+        <div class="login-container">
+            <div class="login-panel">
+                <h2>Panel Logowania</h2>
+                <form action="" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    <input type="submit" value="Zaloguj się">
+                </form>
+                <p id="error-message"></p>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>

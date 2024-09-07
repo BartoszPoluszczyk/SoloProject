@@ -87,6 +87,10 @@ main {
     background-color: #04AA6D;
     color: white;
   }
+  
+  .admin {
+    float: right;
+  }
 
   #logowanie {
     float: right;
@@ -96,4 +100,5 @@ main {
     text-align: right;
     padding: 20px;
   }
+
 
