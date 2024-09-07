@@ -1,0 +1,14 @@
+// Import funkcji Bootstrapa
+@import '~bootstrap/scss/functions';
+
+// Import zmiennych Bootstrapa (w tym $grid-breakpoints)
+@import '~bootstrap/scss/variables';
+
+@import '~bootstrap/scss/mixins';
+
+// Teraz możesz importować swoje własne pliki
+@import 'navbar';
+
+body {
+  background-color: #f8f9fa;
+}

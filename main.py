@@ -8,10 +8,12 @@ from datetime import timedelta
 app = Flask(__name__)
 app.secret_key = 'CMMS'
 
+@app.route("/test")
+def test():
+    return render_template('new_menu.html')
 # %% STRONA GLOWNA      HOMEPAGE        =          http://127.0.0.1:5000/menu
 @app.route("/menu")
 def menu(): 
-
     return render_template("menu.html")
 
     # return render_template("menu.html")
