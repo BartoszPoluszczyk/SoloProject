@@ -103,7 +103,7 @@ def logowanie():
 
 
 # %% Wylogowanie sesji
-@app.route("/wylogowanie")
+@app.route("/wylogowanie", methods=['GET', 'POST'])
 def wylogowanie():
     session.pop('email', None)
     session.pop('user_id', None)

@@ -6,12 +6,39 @@
     <title>Formularz użytkownika</title>
     <link rel="stylesheet" href="../static/dodaj_zgloszenie.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{ url_for('static', filename='menu_style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class = "header">
-        <h1>Dodaj zgloszenie</h1>
+        <h2>Dodaj zgloszenie</h2>
+        <section id="display_user">
+            {% if session.email %}
+                <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
+            {% endif %}
+        </section>
     </header>
+
+    <section class = "basic_categories">
+        <div class="topnav">
+            <a href = "{{ url_for("menu") }}">Strona główna</a>
+            <a href="#news">News</a>
+            <a href="#about">About</a>
+            <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
+            <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
+            <a href="/raport" title="Raport">Raport</a>
+            <a href="/statystyka" title="Statystyka">Statyskyka</a> <!-- Dodano zamknięcie cudzysłowu -->
+            <a href="/kontakt" title="Kontakt">Kontakt</a>
+            <nav id = "logowanie">
+                {% if session.email %}
+                    <a href="{{ url_for('wylogowanie') }}">Wyloguj się</a>
+                {% else %}
+                    <a href="/panel-logowania" title="Logowanie">Logowanie</a>
+                {% endif %}
+            </nav>
+        </div>
+    </section>
+
     
     <form action="/dodaj-zgloszenie" method="post" enctype="multipart/form-data">
         <label for="user">Uzytkownik:</label><br>

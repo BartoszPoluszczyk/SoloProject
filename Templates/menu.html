@@ -11,60 +11,35 @@
 </head>
 
 <body>
-    <header class = "header">
-        <h2>Factory Task Manager FTM</h2>
-    </header>
-    <section class = "basic_categories">
-        <nav class = "categories">
-            <ul>
-                <li><a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a></li>
-                <li><a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a></li>
-                <li><a href="/raport" title="Raport">Raport</a></li>
-                <li><a href="/statystyka" title="Statystyka">Statyskyka</a></li> <!-- Dodano zamknięcie cudzysłowu -->
-                <li><a href="/kontakt" title="Kontakt">Kontakt</a></li>
-                <li><a href="/panel-logowania" title="Logowanie">Logowanie</a></li>
-            </ul>
-        </nav>
-
-
+<header class="header">
+    <h2>Factory Task Manager FTM</h2>
+    <section id="display_user">
+        {% if session.email %}
+            <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
+        {% endif %}
     </section>
-
-    <nav>
-        <h2>About us:</h2>
-        <p>FTM jest to program majacy na celu ulatwic organizacje pracy w zakladach produkcyjnych.
-            Program ten jest glownie dedykowany do dzialow utrzymania ruchu. 
-        </p><br>
-    </nav>
-
-    
-
-    <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
+</header>
+    <section class = "basic_categories">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#about">About</a>
+            <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
+            <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
+            <a href="/raport" title="Raport">Raport</a>
+            <a href="/statystyka" title="Statystyka">Statyskyka</a> <!-- Dodano zamknięcie cudzysłowu -->
+            <a href="/kontakt" title="Kontakt">Kontakt</a>
+            <nav id = "logowanie">
+                {% if session.email %}
+                    <a href="{{ url_for('wylogowanie') }}">Wyloguj się</a>
+                {% else %}
+                    <a href="/panel-logowania" title="Logowanie">Logowanie</a>
+                {% endif %}
+                  </nav>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          © 2024 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-          </div>
-        </div>
-      </footer>
-    
+    </section>
+    <footer class = "footer">Autor: P.B</footer>
 
-</body>  
 
-</html>
+</body>
+</html> 
