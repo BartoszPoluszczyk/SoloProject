@@ -19,7 +19,7 @@
         {% endif %}
     </section>
 </header> <!-- Added closing tag -->
-    <section class="basic_categories">
+    <section class="basic_categories">\
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#news">News</a>
@@ -38,7 +38,7 @@
                 {% endif %}
             </nav>
             <nav class="admin">
-              {% if session.user_id == 1%}
+              {% if session['user_level'] == '5'%}
                   <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
               {% endif %}
           </nav>

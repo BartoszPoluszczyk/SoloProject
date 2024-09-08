@@ -19,9 +19,9 @@ def menu():
     # return render_template("menu.html")
 
 # %% Logowanie 
-@app.route('/panel-logowania')
-def panel_logowania():
-    return render_template("panel_logowania.html")
+# @app.route('/panel-logowania')
+# def panel_logowania():
+#     return render_template("panel_logowania.html")
 
 # %% Rejestrowanie 
 
@@ -37,6 +37,7 @@ def rejestracja():
         regulamin1 = request.form.get("regulamin1")
         regulamin2 = request.form.get("regulamin2")
         regulamin3 = request.form.get("regulamin3")
+        user_level = request.form.get ("user_level")
         
         hashed_password = generate_password_hash(password)
         data = load_users_data()
@@ -64,7 +65,11 @@ def rejestracja():
             ('lastname' , lastname),
             ('email' , email.lower()),
             ('password' , hashed_password),
-            ('gender' , gender)
+            ('gender', gender),
+            ('regulamin1' , regulamin1),
+            ('regulamin2' , regulamin2),
+            ('regulamin3' , regulamin3),
+            ('user_level' , user_level)
         ])
 
         data.append(new_user)
@@ -75,7 +80,7 @@ def rejestracja():
 
 # %% Logowanie 
 @app.route("/panel-logowania", methods = ["GET", "POST"])
-def logowanie():
+def panel_logowania():
     data = load_users_data()
     if request.method == "POST":
         email = request.form.get('email')
@@ -89,6 +94,9 @@ def logowanie():
             if check_password_hash(user['password'], password):
                 session['email'] = user['email']
                 session['user_id'] = user['user_id']
+                session['name'] = user['name']
+                session['lastname'] = user['lastname']
+                session['user_level'] = user['user_level']
                 session.permanent = True
                 session.permanent_session_lifetime = timedelta(minutes=30) 
                 return redirect(url_for('menu'))
@@ -153,14 +161,26 @@ def dodaj_zgloszenie():
         return redirect(url_for('panel_logowania'))
 
 # %% ZGLOSZENIA --> LISTA ZGLOSZEN
-
-@app.route("/zgloszenia", methods = ["GET"])
-def task_list():
+@app.route('/zgloszenia')
+def zgloszenia():
     if 'email' in session:
-        data = load_data() 
-        return data
+        data = load_data()  # Ładowanie zgłoszeń z pliku zgloszenia.json
+        return render_template('zgloszenia.html', zgloszenia=data)
+    else:
+        return redirect(url_for('panel_logowania'))
     
-
+# %% Szczegoly zgloszenia
+@app.route('/zgloszenie/<int:task_id>')
+def zgloszenie_szczegoly(task_id):
+    if 'email' in session:
+        data = load_data()
+        zgloszenie = next((item for item in data if item['task_id'] == task_id), None)
+        if zgloszenie:
+            return render_template('zgloszenie_szczegoly.html', zgloszenie=zgloszenie)
+        else:
+            return "Zgłoszenie nie znalezione", 404
+    else:
+        return redirect(url_for('panel_logowania'))
 
 if __name__ == "__main__":
     app.run()

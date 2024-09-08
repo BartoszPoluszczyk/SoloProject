@@ -21,7 +21,7 @@
 
     <section class = "basic_categories">
         <div class="topnav">
-            <a href = "{{ url_for("menu") }}">Strona główna</a>
+            <a class="active" href="{{ url_for('menu') }}">Strona Główna</a>
             <a href="#news">News</a>
             <a href="#about">About</a>
             <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
@@ -36,16 +36,21 @@
                     <a href="/panel-logowania" title="Logowanie">Logowanie</a>
                 {% endif %}
             </nav>
+            <nav class="admin">
+                {% if session['user_level'] == '5'%}
+                    <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
+                {% endif %}
+            </nav>
         </div>
     </section>
 
     
     <form action="/dodaj-zgloszenie" method="post" enctype="multipart/form-data">
         <label for="user">Uzytkownik:</label><br>
-        <input type="text" id="user" name="user" required placeholder="Uzytkownik"><br><br>
+        <input type="text" id="user" name="user" value="{{ session['name'] + ' ' + session['lastname'] }}" readonly><br><br>
 
         <label for="department">Dzial:</label>
-        <select id = 'department' name = "department" required>
+        <select id = 'department' name = "department" >
             <option value = "IM"> IM </option>
             <option value = 'MT' > MT </option>
             <option value = "TS" > TS </option>
@@ -79,7 +84,7 @@
         <label for="message">Opisa zdarzenia:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required placeholder = "Opisz zdarzenie"></textarea><br><br>
 
-        <input type="submit" value="Wyślij">
+        <button class="button">Dodaj zgloszenie</button>
     </form>
 
     <footer class = "footer">

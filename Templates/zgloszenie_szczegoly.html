@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczegóły zgłoszenia</title>
+</head>
+<body>
+    <h1>Szczegóły zgłoszenia #{{ zgloszenie['task_id'] }}</h1>
+    <p><strong>Użytkownik:</strong> {{ zgloszenie['user'] }}</p>
+    <p><strong>Dział:</strong> {{ zgloszenie['department'] }}</p>
+    <p><strong>Nr maszyny:</strong> {{ zgloszenie['machine'] }}</p>
+    <p><strong>Priorytet:</strong> {{ zgloszenie['priority_level'] }}</p>
+    <p><strong>Data zgłoszenia:</strong> {{ zgloszenie['date'] }} o godzinie {{ zgloszenie['time'] }}</p>
+    <p><strong>Wiadomość:</strong> {{ zgloszenie['message'] }}</p>
+    <a href="{{ url_for('zgloszenia') }}">Wróć do listy zgłoszeń</a>
+</body>
+</html>

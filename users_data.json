@@ -5,14 +5,19 @@
         "lastname": "admin",
         "email": "bartosz12360@gmail.com",
         "password": "scrypt:32768:8:1$RVMEZDP2rlB88KtX$f02f69aa248cb03a9369e6b4ab409f662ea3e625103b8c54410bb3d679d63347457201cad514da8a71fc07b4c8249c5b593907563b81f97e4efa4c5de271297b",
-        "gender": "male"
+        "gender": "male",
+        "user_level": "5"
     },
     {
         "user_id": 2,
-        "name": "11",
-        "lastname": "11",
-        "email": "1@w.pl",
-        "password": "scrypt:32768:8:1$3bSm9C40QFCe5FqD$ceea996d2fa30c1ee7766928ef11352e974e4ea0924a3e96ea7ccc747cfd0e0538142ac56bdf8c214a75e808a376b185486207a9a40685a2cdd8f97cef57cd92",
-        "gender": "male"
+        "name": "admin2",
+        "lastname": "admin2",
+        "email": "admin@admin.admin",
+        "password": "scrypt:32768:8:1$mpbrXtjmCCRxB0Np$b2271222d0af47fc7a2fe019dd7a7e6b766bc1288fa952f5fbf0af3a2f98f9fcadae855c572b16fb7de0c51d2cfc769ebbb2ae85deac7ff1e00f3d9175a7f91c",
+        "gender": "male",
+        "regulamin1": "regulamin1",
+        "regulamin2": null,
+        "regulamin3": null,
+        "user_level": "5"
     }
 ]
