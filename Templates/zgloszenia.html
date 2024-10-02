@@ -10,15 +10,17 @@
 <body>
     <header class="header">
         <h2>Factory Task Manager FTM</h2>
-        <section id="display_user">
-            {% if session.email %}
-                <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
-            {% endif %}
-        </section>
+            <section id="display_user">
+                {% if session.email %}
+                    <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
+                {% endif %}
+            </section>
+        <div id='zegar'></div>
     </header>
+
     <section class="basic_categories">
         <div class="topnav">
-            <a class="active" href="{{ url_for('menu') }}" {% if request.path == '/menu' %}style="color: blue"{% endif %}>Home</a>
+            <a class="active" href="{{ url_for('menu') }}" {% if request.path == '/menu' %}style="color: blue"{% endif %}>Strona główna</a>
             <a href="#news">News</a>
             <a href="#about">About</a>
             <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
@@ -70,6 +72,7 @@
     <footer>
         Autor: P.B
     </footer>
+    <script src="{{ url_for('static', filename='zegar.js') }}"></script>
 
 </body>
 </html>

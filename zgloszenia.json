@@ -243,5 +243,27 @@
         "priority_level": "Sredni",
         "reporting_date": "2024-08-31T09:09:28",
         "message": "asfdasdfsa"
+    },
+    {
+        "task_id": 26,
+        "date": "2024-09-11",
+        "time": "19:50:08",
+        "user": "njghf hgfh",
+        "department": "TS",
+        "machine": "5",
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-09-11T19:50:08",
+        "message": "ojnhosdfnolfdsnfsdf"
+    },
+    {
+        "task_id": 27,
+        "date": "2024-09-20",
+        "time": "21:27:10",
+        "user": "njghf hgfh",
+        "department": "IM",
+        "machine": "23",
+        "priority_level": "Sredni",
+        "reporting_date": "2024-09-20T21:27:10",
+        "message": "Test"
     }
 ]

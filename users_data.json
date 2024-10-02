@@ -19,5 +19,29 @@
         "regulamin2": null,
         "regulamin3": null,
         "user_level": "5"
+    },
+    {
+        "user_id": 3,
+        "name": "njghf",
+        "lastname": "hgfh",
+        "email": "fds@d.wp",
+        "password": "scrypt:32768:8:1$wCdQA6WOjc6gOxL7$0890ea73476c9310fb70098e3af01d2177f383049e813ea6ae92a8862219da68fbfd926d4a44a4fb6d7a9151df69292444bc4ed1bb444a15c1ee83159c18f178",
+        "gender": "other",
+        "regulamin1": "regulamin1",
+        "regulamin2": null,
+        "regulamin3": null,
+        "user_level": "2"
+    },
+    {
+        "user_id": 4,
+        "name": "Marlena",
+        "lastname": "Jagiello",
+        "email": "marlena@tomalpa.com",
+        "password": "scrypt:32768:8:1$zUkO5vEZdz4A2Phm$b2108b239dbaf7cf22467c07c2db7e547270863a9c15c3b191c77e3d16c9b0c328d3b71464d4a081bae3742a580165f98ce6368cfe1629d83ab286db8449f82f",
+        "gender": "female",
+        "regulamin1": "regulamin1",
+        "regulamin2": null,
+        "regulamin3": null,
+        "user_level": "4"
     }
 ]

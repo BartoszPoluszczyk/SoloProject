@@ -137,3 +137,8 @@ th {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+#zegar {
+  text-align: right;
+  margin: 0px 15px;
+}
