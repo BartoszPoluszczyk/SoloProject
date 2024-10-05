@@ -17,7 +17,7 @@ body {
   background-color: #333;
   color: #fff;
   padding: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 .header h2 {
@@ -92,7 +92,7 @@ footer {
 
 section#display_user {
   padding: 1em;
-  text-align: right;
+  text-align: center;
 }
 
 section#display_user p {

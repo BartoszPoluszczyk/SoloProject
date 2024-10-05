@@ -182,5 +182,13 @@ def zgloszenie_szczegoly(task_id):
     else:
         return redirect(url_for('panel_logowania'))
 
+
+@app.route('/urzadzenia')
+def urzadzenia():
+    return render_template("urzadzenia.html")
+    
+    
 if __name__ == "__main__":
     app.run()
+    
+    

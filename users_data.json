@@ -43,5 +43,17 @@
         "regulamin2": null,
         "regulamin3": null,
         "user_level": "4"
+    },
+    {
+        "user_id": 5,
+        "name": "dfsad",
+        "lastname": "adsda",
+        "email": "adsasd@wp.pl",
+        "password": "scrypt:32768:8:1$yNJqi96m2FIxyBAs$817e39a37deb3a4a16b00b1dfc5ab989f4c2ad6da9884ec7a75acba645cbffe8291007fb53c1f069403f0bd4dc7a92b12a7e6281ab40fff8cd20b8915a05efde",
+        "gender": "female",
+        "regulamin1": "regulamin1",
+        "regulamin2": null,
+        "regulamin3": null,
+        "user_level": "3"
     }
 ]

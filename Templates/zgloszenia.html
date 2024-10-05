@@ -20,11 +20,11 @@
 
     <section class="basic_categories">
         <div class="topnav">
-            <a class="active" href="{{ url_for('menu') }}" {% if request.path == '/menu' %}style="color: blue"{% endif %}>Strona główna</a>
-            <a href="#news">News</a>
-            <a href="#about">About</a>
+            <a href="{{ url_for('menu') }}" {% if request.path == '/menu' %}style="color: blue"{% endif %}>Strona główna</a>
+            <a href="/urzadzenia">Urządzenia</a>
+            <a href="/przeglady">Przeglady</a>
             <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
-            <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
+            <a class="active" href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
             <a href="/raport" title="Raport">Raport</a>
             <a href="/statystyka" title="Statystyka">Statystyka</a>
             <a href="/kontakt" title="Kontakt">Kontakt</a>

@@ -11,30 +11,29 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header">
-        <h2>Factory Task Manager [FTM]</h2>
+    <header class = "header">
+        <h2>Dodaj zgloszenie</h2>
         <section id="display_user">
             {% if session.email %}
                 <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
             {% endif %}
         </section>
         <div id='zegar'></div>
-    </header> 
+    </header>
 
-    <section class="basic_categories">\
+
+    <section class = "basic_categories">
         <div class="topnav">
-            <a class="active" href="{{ url_for('menu') }}">Strona główna</a>
-            <a href="/urzadzenia">Urządzenia</a>
+            <a href="{{ url_for('menu') }}">Strona główna</a>
+            <a class="active"href="/urzadzenia">Urządzenia</a>
             <a href="/przeglady">Przeglady</a>
             <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
             <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
             <a href="/raport" title="Raport">Raport</a>
-            <a href="/statystyka" title="Statystyka">Statystyka</a>
+            <a href="/statystyka" title="Statystyka">Statyskyka</a> <!-- Dodano zamknięcie cudzysłowu -->
             <a href="/kontakt" title="Kontakt">Kontakt</a>
-
-            <nav id="logowanie">
+            <nav id = "logowanie">
                 {% if session.email %}
                     <a href="{{ url_for('wylogowanie') }}">Wyloguj się</a>
                 {% else %}
@@ -42,15 +41,10 @@
                 {% endif %}
             </nav>
             <nav class="admin">
-            {% if session['user_level'] == '5'%}
-                <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
-            {% endif %}
-        </nav>
+                {% if session['user_level'] == '5'%}
+                    <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
+                {% endif %}
+            </nav>
         </div>
     </section>
-
-    <footer class="footer">Autor: P.B</footer>
-    <script src="{{ url_for('static', filename='zegar.js') }}"></script>
-
 </body>
-</html>

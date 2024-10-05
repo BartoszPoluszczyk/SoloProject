@@ -9,3 +9,4 @@ Utworzenie szablonu do dodawania zgloszenia DONE
 
 To Do 
 Dodac przycisk wyjsca do strony glownej po dodaniu zgloszenia 
+Dodac funkcje edycji uzytkownikow --> PATCH PUT 

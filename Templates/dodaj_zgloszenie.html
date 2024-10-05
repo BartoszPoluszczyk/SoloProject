@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class = "header">
-        <h2>Dodaj zgloszenie</h2>
+        <h2>Factory Task Manager [FTM]</h2>
         <section id="display_user">
             {% if session.email %}
                 <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
@@ -25,13 +25,13 @@
 
     <section class = "basic_categories">
         <div class="topnav">
-            <a class="active" href="{{ url_for('menu') }}">Strona główna</a>
-            <a href="#news">News</a>
-            <a href="#about">About</a>
-            <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
+            <a href="{{ url_for('menu') }}">Strona główna</a>
+            <a href="/urzadzenia">Urządzenia</a>
+            <a href="/przeglady">Przeglady</a>
+            <a class="active" href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
             <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
             <a href="/raport" title="Raport">Raport</a>
-            <a href="/statystyka" title="Statystyka">Statyskyka</a> <!-- Dodano zamknięcie cudzysłowu -->
+            <a href="/statystyka" title="Statystyka">Statyskyka</a>
             <a href="/kontakt" title="Kontakt">Kontakt</a>
             <nav id = "logowanie">
                 {% if session.email %}
