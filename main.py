@@ -163,9 +163,21 @@ def dodaj_zgloszenie():
 # %% ZGLOSZENIA --> LISTA ZGLOSZEN
 @app.route('/zgloszenia')
 def zgloszenia():
+    sort_by = request.args.get('sort_by')
+    order = request.args.get('order', 'asc')
+    
     if 'email' in session:
-        data = load_data()  # Ładowanie zgłoszeń z pliku zgloszenia.json
-        return render_template('zgloszenia.html', zgloszenia=data, active_page='zgloszenia')
+        try:
+            data = load_data()  # Ładowanie zgłoszeń z pliku zgloszenia.json
+            if sort_by == 'machine':
+                sorted_data = sorted(zgloszenia, key = lambda x:x['machine'], reverse = (order == 'desc'))
+            elif sort_by == 'department':
+                sorted_data = sorted(zgloszenia, key = lambda x:x['department'], reverse = (order == 'desc'))
+            else:
+                sorted_data = zgloszenia
+            return render_template('zgloszenia.html', zgloszenia=data, sorted_zgloszenia = sorted_data, active_page='zgloszenia')
+        except Exception as e:
+            return 'Error loading data: ' + str(e)
     else:
         return redirect(url_for('panel_logowania'))
     
