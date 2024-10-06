@@ -165,7 +165,7 @@ def dodaj_zgloszenie():
 def zgloszenia():
     if 'email' in session:
         data = load_data()  # Ładowanie zgłoszeń z pliku zgloszenia.json
-        return render_template('zgloszenia.html', zgloszenia=data)
+        return render_template('zgloszenia.html', zgloszenia=data, active_page='zgloszenia')
     else:
         return redirect(url_for('panel_logowania'))
     
@@ -195,7 +195,28 @@ def test2():
 def test3():
     return render_template('Base_template.html')
     
-    
+@app.route('/przeglady')
+def przeglady():
+    return render_template('przeglady.html', active_page='przeglady')
+@app.route('/raport')
+def raport():
+    return render_template('raport.html', active_page='raport')
+@app.route('/statystyka')
+def statystyka():
+    return render_template('statystyka.html', active_page='statystyka')
+@app.route('/kontakt')
+def kontakt():
+    return render_template('kontakt.html', active_page='kontakt')
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
     
