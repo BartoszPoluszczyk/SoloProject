@@ -1,49 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona główna</title>
-    <link rel="stylesheet" href="../static/menu_style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+{% extends 'menu.html' %}
 
-</head>
+{% block title %}Strona główna FTM{% endblock %}
 
-<body>
-    <header class="header">
-        <h2>Factory Task Manager FTM</h2>
-        <section id="display_user">
-            {% if session.email %}
-                <p>{{ session.email }} (User ID: {{ session.user_id }})</p>
-            {% endif %}
-        </section>
-        <div id='zegar'></div>
-    </header> 
-        <section class="basic_categories">\
-            <div class="topnav">
-                <a href="{{ url_for('menu') }}">Strona główna</a>
-                <a href="/urzadzenia">Urządzenia</a>
-                <a href="/przeglady">Przeglady</a>
-                <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
-                <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
-                <a href="/raport" title="Raport">Raport</a>
-                <a class="active" href="/statystyka" title="Statystyka">Statystyka</a>
-                <a href="/kontakt" title="Kontakt">Kontakt</a>
-
-                <nav id="logowanie">
-                    {% if session.email %}
-                        <a href="{{ url_for('wylogowanie') }}">Wyloguj się</a>
-                    {% else %}
-                        <a href="/panel-logowania" title="Logowanie">Logowanie</a>
-                    {% endif %}
-                </nav>
-                <nav class="admin">
-                {% if session['user_level'] == '5'%}
-                    <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
-                {% endif %}
-            </nav>
-            </div>
-        </section>
-    <footer class="footer">Autor: P.B</footer>
-</body>
+{% block content %}
+  
+{% endblock %}
