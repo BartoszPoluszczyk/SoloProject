@@ -185,10 +185,18 @@ def zgloszenie_szczegoly(task_id):
 
 @app.route('/urzadzenia')
 def urzadzenia():
-    return render_template("urzadzenia.html")
+    return render_template("urzadzenia.html", active_page='urzadzenia')
+    
+    
+@app.route('/test2')
+def test2():
+    return render_template('childfile.html')
+@app.route('/test3')
+def test3():
+    return render_template('Base_template.html')
     
     
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
     
     

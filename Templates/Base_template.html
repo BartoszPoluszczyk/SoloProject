@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona główna</title>
+    <title>{% block title %}Strona główna{% endblock %}</title>
+
     <link rel="stylesheet" href="../static/menu_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -22,14 +23,14 @@
     </header> 
         <section class="basic_categories">\
             <div class="topnav">
-                <a class="active" href="{{ url_for('menu') }}">Strona główna</a>
-                <a href="/urzadzenia">Urządzenia</a>
-                <a href="/przeglady">Przeglady</a>
-                <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
-                <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
-                <a href="/raport" title="Raport">Raport</a>
-                <a href="/statystyka" title="Statystyka">Statystyka</a>
-                <a href="/kontakt" title="Kontakt">Kontakt</a>
+                <a href="{{ url_for('menu') }}" class="{% if active_page == 'menu' %}active{% endif %}">Strona główna</a>
+                <a href="/urzadzenia" class="{% if active_page == 'urzadzenia' %}active{% endif %}">Urządzenia</a>
+                <a href="/przeglady" class="{% if active_page == 'przeglady' %}active{% endif %}">Przeglądy</a>
+                <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie" class="{% if active_page == 'dodaj-zgloszenie' %}active{% endif %}">Dodaj zgłoszenie</a>
+                <a href="/zgloszenia" title="Lista zgłoszeń" class="{% if active_page == 'zgloszenia' %}active{% endif %}">Zgłoszenia</a>
+                <a href="/raport" title="Raport" class="{% if active_page == 'raport' %}active{% endif %}">Raport</a>
+                <a href="/statystyka" title="Statystyka" class="{% if active_page == 'statystyka' %}active{% endif %}">Statystyka</a>
+                <a href="/kontakt" title="Kontakt" class="{% if active_page == 'kontakt' %}active{% endif %}">Kontakt</a>
 
                 <nav id="logowanie">
                     {% if session.email %}
@@ -43,7 +44,10 @@
                     <a href="{{ url_for('rejestracja') }}">Dodaj użytkownika</a>
                 {% endif %}
             </nav>
-            </div>
-        </section>
+        </div>
+    </section>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
     <footer class="footer">Autor: P.B</footer>
 </body>
