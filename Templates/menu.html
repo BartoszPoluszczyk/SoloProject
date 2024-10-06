@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz użytkownika</title>
+    <title>{% block title %}Strona główna{% endblock %}</title>
     <link rel="stylesheet" href="../static/dodaj_zgloszenie.css">
     <link rel="stylesheet" href="../static/menu_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +25,14 @@
 
     <section class="basic_categories">\
         <div class="topnav">
-            <a class="active" href="{{ url_for('menu') }}">Strona główna</a>
-            <a href="/urzadzenia">Urządzenia</a>
-            <a href="/przeglady">Przeglady</a>
-            <a href="/dodaj-zgloszenie" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
-            <a href="/zgloszenia" title="Lista zgłoszeń">Zgloszenia</a>
-            <a href="/raport" title="Raport">Raport</a>
-            <a href="/statystyka" title="Statystyka">Statystyka</a>
-            <a href="/kontakt" title="Kontakt">Kontakt</a>
+            <a href="{{ url_for('menu') }}" class="{% if active_page == 'menu' %}active{% endif %}">Strona główna</a>
+            <a href="/urzadzenia" class="{% if active_page == 'urzadzenia' %}active{% endif %}">Urządzenia</a>
+            <a href="/przeglady" class="{% if active_page == 'przeglady' %}active{% endif %}">Przeglady</a>
+            <a href="/dodaj-zgloszenie" class="{% if active_page == 'dodaj-zgloszenie' %}active{% endif %}" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
+            <a href="/zgloszenia" class="{% if active_page == 'zgloszenia' %}active{% endif %}" title="Lista zgłoszeń">Zgloszenia</a>
+            <a href="/raport" class="{% if active_page == 'raport' %}active{% endif %}" title="Raport">Raport</a>
+            <a href="/statystyka" class="{% if active_page == 'statystyka' %}active{% endif %}" title="Statystyka">Statystyka</a>
+            <a href="/kontakt" class="{% if active_page == 'kontakt' %}active{% endif %}" title="Kontakt">Kontakt</a>
 
             <nav id="logowanie">
                 {% if session.email %}

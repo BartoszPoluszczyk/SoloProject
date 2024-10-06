@@ -14,7 +14,7 @@ def test():
 # %% STRONA GLOWNA      HOMEPAGE        =          http://127.0.0.1:5000/menu
 @app.route("/menu")
 def menu(): 
-    return render_template("menu.html")
+    return render_template("menu.html", active_page='menu')
 
     # return render_template("menu.html")
 
