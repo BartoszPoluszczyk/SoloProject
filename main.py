@@ -181,29 +181,40 @@ def zgloszenie_szczegoly(task_id):
             return "Zgłoszenie nie znalezione", 404
     else:
         return redirect(url_for('panel_logowania'))
+    
+# %% Edycja zgloszenia 
+@app.route('/zgloszenie/<int:task_id>/edit', methods=["PATCH, PUT"])
+def zgloszenie_edycja(task_id):
+    # Tu wyświetl formularz do edycji zgłoszenia
+    zgloszenie = next((z for z in zgloszenia if z['task_id'] == task_id), None)
+    return render_template('zgloszenie_edycja.html', zgloszenie=zgloszenie)
 
+
+@app.route('/zgloszenie-usun')
+def zgloszenie_usun():
+    return render_template('menu.html')
+
+
+# %% Zakladki do zagospodarowania 
 
 @app.route('/urzadzenia')
 def urzadzenia():
     return render_template("urzadzenia.html", active_page='urzadzenia')
     
     
-@app.route('/test2')
-def test2():
-    return render_template('childfile.html')
-@app.route('/test3')
-def test3():
-    return render_template('Base_template.html')
     
 @app.route('/przeglady')
 def przeglady():
     return render_template('przeglady.html', active_page='przeglady')
+
 @app.route('/raport')
 def raport():
     return render_template('raport.html', active_page='raport')
+
 @app.route('/statystyka')
 def statystyka():
     return render_template('statystyka.html', active_page='statystyka')
+
 @app.route('/kontakt')
 def kontakt():
     return render_template('kontakt.html', active_page='kontakt')

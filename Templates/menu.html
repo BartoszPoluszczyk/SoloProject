@@ -26,8 +26,8 @@
     <section class="basic_categories">\
         <div class="topnav">
             <a href="{{ url_for('menu') }}" class="{% if active_page == 'menu' %}active{% endif %}">Strona główna</a>
-            <a href="/urzadzenia" class="{% if active_page == 'urzadzenia' %}active{% endif %}">Urządzenia</a>
-            <a href="/przeglady" class="{% if active_page == 'przeglady' %}active{% endif %}">Przeglady</a>
+            <a href="/urzadzenia" class="{% if active_page == 'urzadzenia' %}active{% endif %}" title='Urzadzenia'>Urządzenia</a>
+            <a href="/przeglady" class="{% if active_page == 'przeglady' %}active{% endif %}" title='Przeglady'>Przeglady</a>
             <a href="/dodaj-zgloszenie" class="{% if active_page == 'dodaj-zgloszenie' %}active{% endif %}" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
             <a href="/zgloszenia" class="{% if active_page == 'zgloszenia' %}active{% endif %}" title="Lista zgłoszeń">Zgloszenia</a>
             <a href="/raport" class="{% if active_page == 'raport' %}active{% endif %}" title="Raport">Raport</a>

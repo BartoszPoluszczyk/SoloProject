@@ -58,7 +58,12 @@
                     <td>{{ zgloszenie['department'] }}</td>
                     <td>{{ zgloszenie['machine'] }}</td>
                     <td>
-                        <a href="{{ url_for('zgloszenie_szczegoly', task_id=zgloszenie['task_id']) }}">Szczegóły</a>
+                        <a href="{{ url_for('zgloszenie_szczegoly', task_id=zgloszenie['task_id']) }}" class='btn btn-details'>Szczegóły</a>
+                        <a href="{{ url_for('zgloszenie_edycja', task_id=zgloszenie['task_id']) }}" class='btn btn-edit'>Edytuj</a>
+
+                        <form action="{{ url_for('zgloszenie_usun', task_id=zgloszenie['task_id']) }}" method="post" style="display:inline;">
+                            <button type="submit" class='btn btn-delete' onclick="return confirm('Czy na pewno chcesz usunąć to zgłoszenie?')">Usuń</button>
+                        </form>
                     </td>
                 </tr>
                 {% endfor %}
