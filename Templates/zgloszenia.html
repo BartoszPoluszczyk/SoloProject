@@ -46,8 +46,10 @@
     <table>
         <thead>
             <tr>
-                <th>Dział</th>
-                <th>Nr. Maszyny</th>
+                <th><a href="{{ url_for('zgloszenia', sort_by='department', order='asc') }}">Dział &#9650;</a> | 
+                    <a href="{{ url_for('zgloszenia', sort_by='department', order='desc') }}">&#9660;</a></th>
+                <th><a href="{{ url_for('zgloszenia', sort_by='machine', order='asc') }}">Nr maszyny &#9650;</a> | 
+                    <a href="{{ url_for('zgloszenia', sort_by='machine', order='desc') }}">&#9660;</a></th>
                 <th>Akcje</th>
             </tr>
         </thead>

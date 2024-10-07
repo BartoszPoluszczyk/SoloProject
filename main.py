@@ -124,7 +124,7 @@ def dodaj_zgloszenie():
         if request.method == "POST":
             user = request.form.get('user')
             department = request.form.get('department')
-            machine = request.form.get('machine')
+            machine = int(request.form.get('machine'))
             priority_level = request.form.get('priority_level')
             reporting_date = request.form.get('date')
             message = request.form.get('message')
@@ -169,13 +169,16 @@ def zgloszenia():
     if 'email' in session:
         try:
             data = load_data()  # Ładowanie zgłoszeń z pliku zgloszenia.json
+            for zgloszenie in data:
+                zgloszenie['machine'] = zgloszenie.get('machine', '') or ''
+                zgloszenie['department'] = zgloszenie.get('department', '') or ''
             if sort_by == 'machine':
-                sorted_data = sorted(zgloszenia, key = lambda x:x['machine'], reverse = (order == 'desc'))
+                sorted_data = sorted(data, key = lambda x:x['machine'] , reverse = (order == 'desc'))
             elif sort_by == 'department':
-                sorted_data = sorted(zgloszenia, key = lambda x:x['department'], reverse = (order == 'desc'))
+                sorted_data = sorted(data, key = lambda x:x['department'], reverse = (order == 'desc'))
             else:
-                sorted_data = zgloszenia
-            return render_template('zgloszenia.html', zgloszenia=data, sorted_zgloszenia = sorted_data, active_page='zgloszenia')
+                sorted_data = data
+            return render_template('zgloszenia.html', zgloszenia=sorted_data, active_page='zgloszenia')
         except Exception as e:
             return 'Error loading data: ' + str(e)
     else:

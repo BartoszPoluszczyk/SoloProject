@@ -1,280 +1,46 @@
 [
     {
-        "task_id": 1,
-        "user": "BP",
-        "department": "MT",
-        "description": "sdaad",
-        "machine": 31,
-        "priority_leavel": "important",
-        "reporting_date": 11
-    },
-    {
-        "task_id": 2,
-        "user": "AM",
-        "department": "da",
-        "description": "sdaad",
-        "machine": 31,
-        "priority_leavel": "important",
-        "reporting_date": 11
-    },
-    {
-        "task_id": 3,
-        "user": "AM",
-        "department": "da",
-        "description": "sdaad",
-        "machine": 31,
-        "priority_leavel": "important",
-        "reporting_date": 11
-    },
-    {
-        "task_id": 4,
-        "user": null,
-        "department": null,
-        "machine": null,
-        "priority_level": null,
-        "reporting_date": null,
-        "message": null
-    },
-    {
-        "task_id": 5,
-        "user": "dsadas",
-        "department": "im",
-        "machine": "123",
-        "priority_level": "wysoki",
-        "reporting_date": "2024-08-19T22:23:50",
-        "message": "fsdagf"
-    },
-    {
-        "task_id": 6,
-        "user": "dsadas",
-        "department": "im",
-        "machine": "123",
-        "priority_level": "wysoki",
-        "reporting_date": "2024-08-19T22:23:50",
-        "message": "fsdagf"
-    },
-    {
-        "task_id": 7,
-        "user": "dsadas",
-        "department": "im",
-        "machine": "123",
-        "priority_level": "wysoki",
-        "reporting_date": "2024-08-19T22:23:50",
-        "message": "fsdagf"
-    },
-    {
-        "task_id": 8,
-        "user": "dsadas",
-        "department": "im",
-        "machine": "123",
-        "priority_level": "wysoki",
-        "reporting_date": "2024-08-19T22:23:50",
-        "message": "fsdagf"
-    },
-    {
-        "task_id": 9,
-        "user": "dsad",
-        "department": "im",
-        "machine": "231",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:26:47",
-        "message": "gsfdgdfs"
-    },
-    {
-        "task_id": 10,
-        "user": "dsad",
-        "department": "im",
-        "machine": "231",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:26:47",
-        "message": "gsfdgdfs"
-    },
-    {
-        "task_id": 11,
-        "user": "gfd",
-        "department": "im",
-        "machine": "3211",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "asdfgas"
-    },
-    {
-        "task_id": 12,
-        "user": "gfd",
-        "department": "im",
-        "machine": "3211",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "asdfgas"
-    },
-    {
-        "task_id": 13,
-        "user": "gfd",
-        "department": "im",
-        "machine": "3211",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "asdfgas"
-    },
-    {
-        "task_id": 14,
-        "user": "gfd",
-        "department": "im",
-        "machine": "3211",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "asdfgas"
-    },
-    {
-        "task_id": 15,
-        "user": "gfd",
-        "department": "im",
-        "machine": "3211",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "asdfgas"
-    },
-    {
-        "task_id": 16,
-        "date": "2024-08-19",
-        "time": "22:35:02",
-        "user": "asdas",
-        "department": "im",
-        "machine": "312",
-        "priority_level": "sredni",
-        "reporting_date": "2024-09T22:38-15:02",
-        "message": "432424rewrqwr"
-    },
-    {
-        "task_id": 17,
-        "date": "2024-08-19",
-        "time": "22:37:26",
-        "user": "fsadfas",
-        "department": "IM",
-        "machine": "321",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:37:26",
-        "message": "fsdafwFE"
-    },
-    {
-        "task_id": 18,
-        "date": "2024-08-19",
-        "time": "22:37:26",
-        "user": "fsadfas",
-        "department": "IM",
-        "machine": "321",
-        "priority_level": "niski",
-        "reporting_date": "2024-08-19T22:37:26",
-        "message": "fsdafwFE"
-    },
-    {
-        "task_id": 19,
-        "date": "2024-08-19",
-        "time": "22:44:00",
-        "user": "dfsfasfdsfd",
-        "department": "IM",
-        "machine": "23134142",
-        "priority_level": "Niski",
-        "reporting_date": "2024-08-19T22:44:00",
-        "message": "fdgabsfvdaqrgf"
-    },
-    {
-        "task_id": 20,
-        "date": "2024-08-20",
-        "time": "10:34:07",
-        "user": "Bartosz",
-        "department": "IM",
-        "machine": "100",
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-20T10:34:07",
-        "message": "Test"
-    },
-    {
-        "task_id": 21,
-        "date": "2024-08-20",
-        "time": "10:34:07",
-        "user": "Bartosz",
-        "department": "IM",
-        "machine": "100",
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-20T10:34:07",
-        "message": "Test2"
-    },
-    {
-        "task_id": 22,
-        "date": "2024-08-25",
-        "time": "12:12:29",
-        "user": "asddadqdqwdqdq",
-        "department": "IM",
-        "machine": "3",
-        "priority_level": "Sredni",
-        "reporting_date": "2024-08-25T12:12:29",
-        "message": "sadadsadsfasdfadsasda"
-    },
-    {
-        "task_id": 23,
-        "date": "2024-08-26",
-        "time": "18:17:30",
-        "user": "dasd",
-        "department": "IM",
-        "machine": "231",
-        "priority_level": "Sredni",
-        "reporting_date": "2024-08-26T18:17:30",
-        "message": "fgdgsdgf"
-    },
-    {
-        "task_id": 24,
-        "date": "2024-08-30",
-        "time": "11:41:29",
-        "user": "dasdad",
-        "department": "MT",
-        "machine": "1",
-        "priority_level": "Sredni",
-        "reporting_date": "2024-08-30T11:41:29",
-        "message": "dasfdavdcas"
-    },
-    {
-        "task_id": 25,
-        "date": "2024-08-31",
-        "time": "09:09:28",
-        "user": "dasd",
-        "department": "TS",
-        "machine": "4",
-        "priority_level": "Sredni",
-        "reporting_date": "2024-08-31T09:09:28",
-        "message": "asfdasdfsa"
-    },
-    {
-        "task_id": 26,
-        "date": "2024-09-11",
-        "time": "19:50:08",
-        "user": "njghf hgfh",
-        "department": "TS",
-        "machine": "5",
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-09-11T19:50:08",
-        "message": "ojnhosdfnolfdsnfsdf"
-    },
-    {
-        "task_id": 27,
-        "date": "2024-09-20",
-        "time": "21:27:10",
-        "user": "njghf hgfh",
-        "department": "IM",
-        "machine": "23",
-        "priority_level": "Sredni",
-        "reporting_date": "2024-09-20T21:27:10",
-        "message": "Test"
-    },
-    {
-        "task_id": 28,
-        "date": "2024-10-06",
-        "time": "17:10:27",
+        "task_id": 29,
+        "date": "2024-10-07",
+        "time": "20:03:11",
         "user": "admin admin",
         "department": "IM",
-        "machine": "123",
+        "machine": 12,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-10-07T20:03:11",
+        "message": "dasdadqw"
+    },
+    {
+        "task_id": 30,
+        "date": "2024-10-07",
+        "time": "20:03:47",
+        "user": "admin admin",
+        "department": "TS",
+        "machine": 31,
         "priority_level": "Sredni",
-        "reporting_date": "2024-10-06T17:10:27",
-        "message": "afdasf"
+        "reporting_date": "2024-10-07T20:03:47",
+        "message": "fasfd"
+    },
+    {
+        "task_id": 31,
+        "date": "2024-10-07",
+        "time": "20:03:57",
+        "user": "admin admin",
+        "department": "QS",
+        "machine": 313,
+        "priority_level": "Niski",
+        "reporting_date": "2024-10-07T20:03:57",
+        "message": "fasfdfasdf"
+    },
+    {
+        "task_id": 32,
+        "date": "2024-10-07",
+        "time": "20:04:09",
+        "user": "admin admin",
+        "department": "QS",
+        "machine": 3133,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-10-07T20:04:09",
+        "message": "fasfdfasdfewqe"
     }
 ]
