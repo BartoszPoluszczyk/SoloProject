@@ -201,16 +201,38 @@ def zgloszenie_szczegoly(task_id):
 @app.route('/zgloszenie/<int:task_id>/edit', methods=["PATCH, PUT"])
 def zgloszenie_edycja(task_id):
     # Tu wyświetl formularz do edycji zgłoszenia
-    zgloszenie = next((z for z in zgloszenia if z['task_id'] == task_id), None)
+    zgloszenie = next((item for item in zgloszenia if item['task_id'] == task_id), None)
     return render_template('zgloszenie_edycja.html', zgloszenie=zgloszenie)
 
+# %% Usuwanie zgloszen 
+@app.route('/zgloszenie/<int:task_id>', methods=["DELETE"])
+def zgloszenie_usun(task_id):
+    data = load_data()
+    usun_zgloszenie = next((item for item in data if item['task_id'] == task_id), None)
+    if usun_zgloszenie:
+        data = [item for item in data if item['task_id'] != task_id]
+        
+        save_data(data)
+        return render_template('zgloszenia.html')
+    else:
+        return jsonify({"error": "Nie znaleziono zgloszenia o podanym ID"}), 404
+    
+    
+    
 
-@app.route('/zgloszenie-usun')
-def zgloszenie_usun():
-    return render_template('menu.html')
 
 
 # %% Zakladki do zagospodarowania 
+
+
+
+
+
+
+
+
+
+
 
 @app.route('/urzadzenia')
 def urzadzenia():

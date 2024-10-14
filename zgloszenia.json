@@ -1,46 +1,57 @@
 [
     {
-        "task_id": 29,
-        "date": "2024-10-07",
-        "time": "20:03:11",
+        "task_id": 3,
+        "date": "2024-08-19",
+        "time": "22:29:27",
         "user": "admin admin",
         "department": "IM",
-        "machine": 12,
+        "machine": 1323,
         "priority_level": "Wysoki",
-        "reporting_date": "2024-10-07T20:03:11",
-        "message": "dasdadqw"
+        "reporting_date": "2024-08-19T22:29:27",
+        "message": "124"
     },
     {
-        "task_id": 30,
-        "date": "2024-10-07",
-        "time": "20:03:47",
+        "task_id": 4,
+        "date": "2024-08-19",
+        "time": "22:29:27",
         "user": "admin admin",
-        "department": "TS",
-        "machine": 31,
-        "priority_level": "Sredni",
-        "reporting_date": "2024-10-07T20:03:47",
-        "message": "fasfd"
-    },
-    {
-        "task_id": 31,
-        "date": "2024-10-07",
-        "time": "20:03:57",
-        "user": "admin admin",
-        "department": "QS",
-        "machine": 313,
-        "priority_level": "Niski",
-        "reporting_date": "2024-10-07T20:03:57",
-        "message": "fasfdfasdf"
-    },
-    {
-        "task_id": 32,
-        "date": "2024-10-07",
-        "time": "20:04:09",
-        "user": "admin admin",
-        "department": "QS",
-        "machine": 3133,
+        "department": "IM",
+        "machine": 1323,
         "priority_level": "Wysoki",
-        "reporting_date": "2024-10-07T20:04:09",
-        "message": "fasfdfasdfewqe"
+        "reporting_date": "2024-08-19T22:29:27",
+        "message": "124"
+    },
+    {
+        "task_id": 5,
+        "date": "2024-08-19",
+        "time": "22:29:27",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 1323,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-08-19T22:29:27",
+        "message": "124"
+    },
+    {
+        "task_id": 6,
+        "date": "2024-08-19",
+        "time": "22:29:27",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 1323,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-08-19T22:29:27",
+        "message": "124"
+    },
+    {
+        "task_id": 7,
+        "date": "2024-08-19",
+        "time": "22:29:27",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 1323,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-08-19T22:29:27",
+        "message": "124"
     }
 ]
