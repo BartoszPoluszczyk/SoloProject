@@ -1,49 +1,5 @@
 [
     {
-        "task_id": 3,
-        "date": "2024-08-19",
-        "time": "22:29:27",
-        "user": "admin admin",
-        "department": "IM",
-        "machine": 1323,
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "124"
-    },
-    {
-        "task_id": 4,
-        "date": "2024-08-19",
-        "time": "22:29:27",
-        "user": "admin admin",
-        "department": "IM",
-        "machine": 1323,
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "124"
-    },
-    {
-        "task_id": 5,
-        "date": "2024-08-19",
-        "time": "22:29:27",
-        "user": "admin admin",
-        "department": "IM",
-        "machine": 1323,
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "124"
-    },
-    {
-        "task_id": 6,
-        "date": "2024-08-19",
-        "time": "22:29:27",
-        "user": "admin admin",
-        "department": "IM",
-        "machine": 1323,
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "124"
-    },
-    {
         "task_id": 7,
         "date": "2024-08-19",
         "time": "22:29:27",
@@ -53,5 +9,16 @@
         "priority_level": "Wysoki",
         "reporting_date": "2024-08-19T22:29:27",
         "message": "124"
+    },
+    {
+        "task_id": 10,
+        "date": "2024-10-17",
+        "time": "19:11:42",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 1231,
+        "priority_level": "Sredni",
+        "reporting_date": "2024-10-17T19:11:42",
+        "message": "sdada"
     }
 ]
