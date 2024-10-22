@@ -20,5 +20,27 @@
         "priority_level": "Sredni",
         "reporting_date": "2024-10-17T19:11:42",
         "message": "sdada"
+    },
+    {
+        "task_id": 11,
+        "date": "2024-10-22",
+        "time": "20:46:45",
+        "user": "admin2 admin2",
+        "department": "IM",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-10-22T20:46:45",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 12,
+        "date": "2024-10-22",
+        "time": "20:46:45",
+        "user": "admin2 admin2",
+        "department": "IM",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-10-22T20:46:45",
+        "message": "Zgloszenie przez formularz automatyczny"
     }
 ]
