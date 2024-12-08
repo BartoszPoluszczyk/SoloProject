@@ -11,10 +11,10 @@
         <h2>Urzadzenie zostalo dodane pomyslnie</h2>
         <p><strong> Id maszyny </strong> {{ new_device.machine_id}}</p>
         <p><strong> Rodzaj urzadzenia: </strong> {{ new_device.machine_type }}</p>
-        <p><strong> Number maszyny: </strong> {{ new_device.machine_number}}</p>
-        <p><strong> Data produkcji mmaszyny </strong> {{ new_device.production_date}}</p>
-        <p><strong> Data wprowadzenia </strong> {{ new_device.introducion_date}}</p>
-        <p><strong> Cyklicznosc przegladow </strong> {{ new_device.maintance_cycle}}</p>
+        <p><strong> Numer maszyny: </strong> {{ new_device.machine_number}}</p>
+        <p><strong> Data produkcji maszyny: </strong> {{ new_device.production_date}}</p>
+        <p><strong> Data wprowadzenia: </strong> {{ new_device.introdution_date}}</p>
+        <p><strong> Cyklicznosc przegladow: </strong> {{ new_device.maintance_interval}}</p>
         <a href="{{ url_for('urzadzenia') }}">Urzadzenia</a>
     </body>
 </html>

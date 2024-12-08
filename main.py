@@ -235,27 +235,27 @@ def zgloszenie_usun(task_id):
 
 
 
-@app.route('/urzadzenia')
-def urzadzenia():
+@app.route('/urzadzenia2')
+def urzadzenia2():
     return render_template("urzadzenia.html", active_page='urzadzenia')
     
     
     
 # %% 
-@app.route('/urzadzenia-2', methods = ["GET, POST"])
-def urzadzenia_2():
+@app.route('/urzadzenia', methods = ["GET", "POST"])
+def urzadzenia():
     if 'email' in session:
-        if request == "POST":
+        if request.method == "POST":
             machine_type = request.form.get('machine_type')
             machine_number = int(request.form.get('machine_number'))
             production_date = request.form.get('production_date')
             introdution_date = request.form.get('introdution_date')
-            maintance_cycle = request.form.get('maintance_cycle')
+            maintance_interval = request.form.get('maintance_interval')
             
             data = load_device_data()
             
             if data:
-                max_device_id = max(int(device['device_id']) for device in data) 
+                max_device_id = max(int(device['machine_id']) for device in data) 
                 new_device_id = max_device_id + 1
             else:
                 new_device_id = 1
@@ -267,14 +267,16 @@ def urzadzenia_2():
                 ('machine_number', machine_number),
                 ('production_date', production_date),
                 ('introdution_date', introdution_date),
-                ('maintance_cycle', maintance_cycle),
+                ('maintance_interval', maintance_interval)
             ])
             
             data.append(new_device)
-            save_device_data()
+            save_device_data(data)
             
             return render_template('device_success.html', new_device = new_device)
-        return render_template('menu.html')
+        return render_template('urzadzenia.html')
+    else:
+        return redirect(url_for('panel_logowania'))
     
     
 @app.route('/przeglady')

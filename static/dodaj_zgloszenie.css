@@ -42,3 +42,9 @@ body {
     cursor: pointer;
     border-radius: 5px; 
   }
+#today_date {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

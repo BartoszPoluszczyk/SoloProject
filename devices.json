@@ -1,0 +1,322 @@
+[
+    {
+        "machine_id": 1,
+        "machine_type": "Wtryskarka",
+        "machine_number": 123,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "6"
+    },
+    {
+        "machine_id": 2,
+        "machine_type": "Robot",
+        "machine_number": 12,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "6"
+    },
+    {
+        "machine_id": 3,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "412"
+    },
+    {
+        "machine_id": 4,
+        "machine_type": "Wtryskarka",
+        "machine_number": 43,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "42"
+    },
+    {
+        "machine_id": 5,
+        "machine_type": "Wtryskarka",
+        "machine_number": 213,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "312"
+    },
+    {
+        "machine_id": 6,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3213,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "213"
+    },
+    {
+        "machine_id": 7,
+        "machine_type": "Wtryskarka",
+        "machine_number": 432,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "213"
+    },
+    {
+        "machine_id": 8,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 9,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 10,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 11,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 12,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 13,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 14,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 15,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 16,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 17,
+        "machine_type": "Wtryskarka",
+        "machine_number": 3421,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "123"
+    },
+    {
+        "machine_id": 18,
+        "machine_type": "Wtryskarka",
+        "machine_number": 414,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "214"
+    },
+    {
+        "machine_id": 19,
+        "machine_type": "Wtryskarka",
+        "machine_number": 765,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "45"
+    },
+    {
+        "machine_id": 20,
+        "machine_type": "Wtryskarka",
+        "machine_number": 765,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "45"
+    },
+    {
+        "machine_id": 21,
+        "machine_type": "Wtryskarka",
+        "machine_number": 765,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "45"
+    },
+    {
+        "machine_id": 22,
+        "machine_type": "Wtryskarka",
+        "machine_number": 765,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "45"
+    },
+    {
+        "machine_id": 23,
+        "machine_type": "Wtryskarka",
+        "machine_number": 765,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "45"
+    },
+    {
+        "machine_id": 24,
+        "machine_type": "Wtryskarka",
+        "machine_number": 453,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "342"
+    },
+    {
+        "machine_id": 25,
+        "machine_type": "Wtryskarka",
+        "machine_number": 453,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "342"
+    },
+    {
+        "machine_id": 26,
+        "machine_type": "Wtryskarka",
+        "machine_number": 453,
+        "production_date": null,
+        "introdution_date": null,
+        "maintance_interval": "342"
+    },
+    {
+        "machine_id": 27,
+        "machine_type": "Wtryskarka",
+        "machine_number": 321,
+        "production_date": "213",
+        "introdution_date": null,
+        "maintance_interval": "4214"
+    },
+    {
+        "machine_id": 28,
+        "machine_type": "Wtryskarka",
+        "machine_number": 231,
+        "production_date": "421",
+        "introdution_date": "3",
+        "maintance_interval": "132"
+    },
+    {
+        "machine_id": 29,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 30,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 31,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 32,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 33,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 34,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 35,
+        "machine_type": "Wtryskarka",
+        "machine_number": 4123,
+        "production_date": "53",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    },
+    {
+        "machine_id": 36,
+        "machine_type": "Wtryskarka",
+        "machine_number": 321,
+        "production_date": "321",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "231"
+    },
+    {
+        "machine_id": 37,
+        "machine_type": "Wtryskarka",
+        "machine_number": 213,
+        "production_date": "321",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "321"
+    },
+    {
+        "machine_id": 38,
+        "machine_type": "Robot",
+        "machine_number": 213,
+        "production_date": "213",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "213"
+    },
+    {
+        "machine_id": 39,
+        "machine_type": "Wtryskarka",
+        "machine_number": 43,
+        "production_date": "312",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "321"
+    },
+    {
+        "machine_id": 40,
+        "machine_type": "Wtryskarka",
+        "machine_number": 23,
+        "production_date": "41",
+        "introdution_date": "2024-12-08",
+        "maintance_interval": "432"
+    }
+]

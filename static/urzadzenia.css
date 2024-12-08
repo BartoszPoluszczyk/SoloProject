@@ -1,0 +1,44 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    max-width: 300px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, button {
+    padding: 7px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+.topnav a.active {
+    background-color: #4CAF50;
+    color: #fff;
+}

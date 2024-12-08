@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="../static/menu_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ url_for('static', filename='menu_style.css') }}">
-    
+    {% block extra_css %}{% endblock %}
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header class="header">
         <h2>Factory Task Manager [FTM]</h2>
         <section id="display_user">
@@ -26,7 +27,7 @@
     <section class="basic_categories">
         <div class="topnav">
             <a href="{{ url_for('menu') }}" class="{% if active_page == 'menu' %}active{% endif %}">Strona główna</a>
-            <a href="/urzadzenia" class="{% if active_page == 'urzadzenia' %}active{% endif %}" title='Urzadzenia'>Urządzenia</a>
+            <a href="/urzadzenia2" class="{% if active_page == 'urzadzenia' %}active{% endif %}" title='Urzadzenia'>Urządzenia</a>
             <a href="/przeglady" class="{% if active_page == 'przeglady' %}active{% endif %}" title='Przeglady'>Przeglady</a>
             <a href="/dodaj-zgloszenie" class="{% if active_page == 'dodaj-zgloszenie' %}active{% endif %}" title="Wprowadź nowe zgłoszenie">Dodaj zgłoszenie</a>
             <a href="/zgloszenia" class="{% if active_page == 'zgloszenia' %}active{% endif %}" title="Lista zgłoszeń">Zgloszenia</a>
@@ -49,6 +50,8 @@
         </div>
     </section>
 
+    {% block content %} 
+    {% endblock content %}
     <footer class="footer">Autor: P.B</footer>
     <script src="{{ url_for('static', filename='zegar.js') }}"></script>
 
