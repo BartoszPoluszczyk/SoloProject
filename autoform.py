@@ -29,14 +29,17 @@ priority_level = driver.find_element(By.NAME, 'priority_level')
 reporting_date = driver.find_element(By.NAME, 'date')
 message = driver.find_element(By.NAME, 'message')
 
-department.send_keys('IM')
+department.send_keys('TS')
 machine.send_keys(5)
 priority_level.send_keys('Niski')
-reporting_date.send_keys('2024-10-22T20:46:45')
+# reporting_date.send_keys('2024-10-22T20:46:45')
+reporting_date_click = driver.find_element(By.ID, 'today_date')
+reporting_date_click.click()
 message.send_keys('Zgloszenie przez formularz automatyczny')
 
 dodaj_zgloszenie = driver.find_element(By.ID, 'przycisk_dodaj_zglosznie')
 dodaj_zgloszenie.click()
+
 
 time.sleep(2)
 

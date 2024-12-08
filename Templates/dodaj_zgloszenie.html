@@ -74,7 +74,7 @@
 
         <label for = "reporting_date">Data zgłoszenia:</label>
         <input type = "datetime" id = "date" name = "date" required>
-            <button type = "button" onclick = "setTodayDate()">Ustaw datę. </button><br>
+            <button type = "button" id='today_date' onclick = "setTodayDate()">Ustaw datę. </button><br>
                 <script>
                     function setTodayDate() {
                         const now = new Date();

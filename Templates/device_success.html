@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zgłoszenie dodane</title>
+        <link rel='stylesheet' href="../static/success.css">
+    </head>
+
+    <body>
+        <h2>Urzadzenie zostalo dodane pomyslnie</h2>
+        <p><strong> Id maszyny </strong> {{ new_device.machine_id}}</p>
+        <p><strong> Rodzaj urzadzenia: </strong> {{ new_device.machine_type }}</p>
+        <p><strong> Number maszyny: </strong> {{ new_device.machine_number}}</p>
+        <p><strong> Data produkcji mmaszyny </strong> {{ new_device.production_date}}</p>
+        <p><strong> Data wprowadzenia </strong> {{ new_device.introducion_date}}</p>
+        <p><strong> Cyklicznosc przegladow </strong> {{ new_device.maintance_cycle}}</p>
+        <a href="{{ url_for('urzadzenia') }}">Urzadzenia</a>
+    </body>
+</html>

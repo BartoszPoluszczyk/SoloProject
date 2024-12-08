@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import json
-from functions import save_data, load_data, load_users_data, save_users_data
+# from functions import save_data, load_data, load_users_data, save_users_data, load_device_data
+from functions import *
 from collections import OrderedDict
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import timedelta
@@ -238,6 +239,42 @@ def zgloszenie_usun(task_id):
 def urzadzenia():
     return render_template("urzadzenia.html", active_page='urzadzenia')
     
+    
+    
+# %% 
+@app.route('/urzadzenia-2', methods = ["GET, POST"])
+def urzadzenia_2():
+    if 'email' in session:
+        if request == "POST":
+            machine_type = request.form.get('machine_type')
+            machine_number = int(request.form.get('machine_number'))
+            production_date = request.form.get('production_date')
+            introdution_date = request.form.get('introdution_date')
+            maintance_cycle = request.form.get('maintance_cycle')
+            
+            data = load_device_data()
+            
+            if data:
+                max_device_id = max(int(device['device_id']) for device in data) 
+                new_device_id = max_device_id + 1
+            else:
+                new_device_id = 1
+                
+        
+            new_device = OrderedDict([
+                ('machine_id', new_device_id),
+                ('machine_type', machine_type),
+                ('machine_number', machine_number),
+                ('production_date', production_date),
+                ('introdution_date', introdution_date),
+                ('maintance_cycle', maintance_cycle),
+            ])
+            
+            data.append(new_device)
+            save_device_data()
+            
+            return render_template('device_success.html', new_device = new_device)
+        return render_template('menu.html')
     
     
 @app.route('/przeglady')

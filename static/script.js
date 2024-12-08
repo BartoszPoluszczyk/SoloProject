@@ -8,7 +8,7 @@ function deleteZgloszenie(url) {
         .then(response => response.json())
         .then(data => {
             console.log('Response received:', data);
-            // Redirect to the zgloszenia page
+            // Przekieruj do zgloszenia 
             window.location.href = '{{ url_for("zgloszenia") }}';
         })
         .catch(error => {

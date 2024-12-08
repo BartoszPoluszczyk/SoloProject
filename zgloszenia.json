@@ -1,49 +1,5 @@
 [
     {
-        "task_id": 7,
-        "date": "2024-08-19",
-        "time": "22:29:27",
-        "user": "admin admin",
-        "department": "IM",
-        "machine": 1323,
-        "priority_level": "Wysoki",
-        "reporting_date": "2024-08-19T22:29:27",
-        "message": "124"
-    },
-    {
-        "task_id": 10,
-        "date": "2024-10-17",
-        "time": "19:11:42",
-        "user": "admin admin",
-        "department": "IM",
-        "machine": 1231,
-        "priority_level": "Sredni",
-        "reporting_date": "2024-10-17T19:11:42",
-        "message": "sdada"
-    },
-    {
-        "task_id": 11,
-        "date": "2024-10-22",
-        "time": "20:46:45",
-        "user": "admin2 admin2",
-        "department": "IM",
-        "machine": 5,
-        "priority_level": "Niski",
-        "reporting_date": "2024-10-22T20:46:45",
-        "message": "Zgloszenie przez formularz automatyczny"
-    },
-    {
-        "task_id": 12,
-        "date": "2024-10-22",
-        "time": "20:46:45",
-        "user": "admin2 admin2",
-        "department": "IM",
-        "machine": 5,
-        "priority_level": "Niski",
-        "reporting_date": "2024-10-22T20:46:45",
-        "message": "Zgloszenie przez formularz automatyczny"
-    },
-    {
         "task_id": 13,
         "date": "2024-10-22",
         "time": "20:46:45",
@@ -130,5 +86,148 @@
         "priority_level": "Niski",
         "reporting_date": "2024-10-22T20:46:45",
         "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 21,
+        "date": "2024-11-24",
+        "time": "10:11:09",
+        "user": "admin admin",
+        "department": "TS",
+        "machine": 32,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-11-24T10:11:09",
+        "message": "grfgfd"
+    },
+    {
+        "task_id": 22,
+        "date": "2024-12-02",
+        "time": "16:32:13",
+        "user": "njghf hgfh",
+        "department": "TS",
+        "machine": 56,
+        "priority_level": "Sredni",
+        "reporting_date": "2024-12-02T16:32:13",
+        "message": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "
+    },
+    {
+        "task_id": 23,
+        "date": "2024-10-22",
+        "time": "20:46:45",
+        "user": "admin2 admin2",
+        "department": "IM",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-10-22T20:46:45",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 24,
+        "date": "2024-10-22",
+        "time": "20:46:45",
+        "user": "admin2 admin2",
+        "department": "IM",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-10-22T20:46:45",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 25,
+        "date": "2024-10-22",
+        "time": "20:46:45",
+        "user": "admin2 admin2",
+        "department": "TS",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-10-22T20:46:45",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 26,
+        "date": "2024-12-08",
+        "time": "10:59:16",
+        "user": "admin2 admin2",
+        "department": "TS",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-12-08T10:59:16",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 27,
+        "date": "2024-12-08",
+        "time": "10:59:45",
+        "user": "admin2 admin2",
+        "department": "TS",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-12-08T10:59:45",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 28,
+        "date": "2024-12-08",
+        "time": "11:05:16",
+        "user": "admin2 admin2",
+        "department": "TS",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-12-08T11:05:16",
+        "message": "Zgloszenie przez formularz automatyczny"
+    },
+    {
+        "task_id": 29,
+        "date": "2024-12-08",
+        "time": "11:26:03",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 23,
+        "priority_level": "Wysoki",
+        "reporting_date": "2024-12-08T11:26:03",
+        "message": "desad"
+    },
+    {
+        "task_id": 30,
+        "date": "2024-12-08",
+        "time": "11:27:15",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 2,
+        "priority_level": "Niski",
+        "reporting_date": "2024-12-08T11:27:15",
+        "message": "d"
+    },
+    {
+        "task_id": 31,
+        "date": "2024-12-08",
+        "time": "12:43:45",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 5,
+        "priority_level": "Niski",
+        "reporting_date": "2024-12-08T12:43:45",
+        "message": "67"
+    },
+    {
+        "task_id": 32,
+        "date": "2024-12-08",
+        "time": "12:44:49",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 2,
+        "priority_level": "Niski",
+        "reporting_date": "2024-12-08T12:44:49",
+        "message": "4"
+    },
+    {
+        "task_id": 33,
+        "date": "2024-12-08",
+        "time": "12:58:05",
+        "user": "admin admin",
+        "department": "IM",
+        "machine": 2,
+        "priority_level": "Sredni",
+        "reporting_date": "2024-12-08T12:58:05",
+        "message": "3"
     }
 ]
